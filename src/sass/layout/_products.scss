@@ -1,4 +1,4 @@
-.btn_arrow {
+.btn__arrow {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -8,7 +8,7 @@
     background-color: transparent;
 }
 
-.arrow_stem {
+.arrow__stem {
     position: relative;
 
     width: 40px;
@@ -16,7 +16,7 @@
     background-color: #000;
 }
 
-.arrow_tip {
+.arrow__tip {
     position: absolute;
     top: -4px;
     right: 0;
