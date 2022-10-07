@@ -1,0 +1,28 @@
+.btn_arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 10px;
+    border: transparent;
+    background-color: transparent;
+}
+
+.arrow_stem {
+    position: relative;
+
+    width: 40px;
+    height: 2px;
+    background-color: #000;
+}
+
+.arrow_tip {
+    position: absolute;
+    top: -4px;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    border-right: 2px solid #000;
+    border-bottom: 2px solid #000;
+    transform: rotate(-45deg);
+}
