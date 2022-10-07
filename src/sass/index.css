@@ -42,4 +42,30 @@ button {
 
 .list {
   list-style: none;
+}
+
+.btn_arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 10px;
+}
+
+.arror_stem {
+  display: inline-block;
+  width: 100px;
+  height: 2px;
+  background-color: #000;
+  border: 5px solid #000;
+  border-radius: 4px;
+  border-bottom: #000;
+}
+
+.arrow_tip {
+  display: block;
+  width: 10px;
+  border-right: 2px solid #000;
+  border-bottom: 2px solid #000;
+  transform: rotate(-45deg);
 }/*# sourceMappingURL=index.css.map */
