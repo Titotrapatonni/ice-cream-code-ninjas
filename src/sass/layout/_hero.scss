@@ -1,7 +1,7 @@
 .container {
     max-width: 480px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
 
     margin-left: auto;
     margin-right: auto;
@@ -24,13 +24,81 @@
 
 .hero {
     background: #84A178;
+    position: relative;
+    height: 502px;
+}
+
+.hero__title {
+    font-family: 'Seymour One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 1.26;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #FCFCFC;
+
+    width: 247px;
+    padding-top: 60px;
+}
+
+.hero__menu-btn {
+    // font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 8px;
+    line-height: 10px;
+    color: black;
+
+    display: flex;
+    gap: 8px;
+
+}
+
+.hero__btn-border {
+    width: 62px;
+    height: 24px;
+    background-color: transparent;
+    border: 2px solid #F8D24E;
+    border-radius: 8px;
+    color: black;
+}
+
+.hero__btn {
+    width: 83px;
+    height: 24px;
+    background-color: transparent;
+    border: none;
+
+    color: #F8D24E;
+    text-decoration-line: underline;
+}
+
+.hero__dots-img {
+    position: absolute;
+    width: 428px;
+    bottom: 0;
+    left: 20px;
+}
+
+.hero__ice-cream-img {
+    width: 270px;
+    // height: 219px;
+    position: absolute;
+    bottom: 0;
+    left: 82px;
 }
 
 
-.hero__dots-svg {
-    fill: red;
+
+
+@media screen and (max-width: 767px){
+
+.hero__ice-cream-about {
+    display: none;
 }
 
-.test{
-    fill: red;
+.hero__menu-cafes {
+    display: none;
+}
 }
