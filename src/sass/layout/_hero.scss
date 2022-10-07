@@ -1,0 +1,36 @@
+.container {
+    max-width: 480px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1200px;
+    }
+}
+
+
+
+
+.hero {
+    background: #84A178;
+}
+
+
+.hero__dots-svg {
+    fill: red;
+}
+
+.test{
+    fill: red;
+}
