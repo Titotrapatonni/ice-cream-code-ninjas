@@ -10,14 +10,14 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Seymour+One&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./sass/index.scss" />
+    <link rel="stylesheet" href="./sass/index.css" />
     <script type="module" src="./index.js"></script>
   </head>
 
   <body>
     <!------------------------HEADER-------------------------------->
     <header class="page-header">
-      <div class="page-header__container">
+      <div class="page-header__container container">
         <nav class="page-nav">
           <a class="page-logo">
             <picture>
@@ -72,26 +72,87 @@
               />
             </picture>
           </a>
-          <ul class="page-nav__list">
+          <ul class="page-nav__list list">
             <li class="page-nav__item">
-              <a class="page-nav__link" href="">Home</a>
+              <a class="page-nav__link link" href="">Home</a>
             </li>
             <li class="page-nav__item">
-              <a class="page-nav__link" href="">How it's made?</a>
+              <a class="page-nav__link link" href="">How it's made?</a>
             </li>
             <li class="page-nav__item">
-              <a class="page-nav__link" href="">Our products</a>
+              <a class="page-nav__link link" href="">Our products</a>
             </li>
             <li class="page-nav__item">
-              <a class="page-nav__link" href="">Contact</a>
+              <a class="page-nav__link link" href="">Contact</a>
             </li>
           </ul>
         </nav>
-        <button type="button" class="open-mobile-menu-button" data-menu-open>
-          Buy now
-        </button>
+        <button
+          type="button"
+          class="open-mobile-menu-button"
+          data-menu-open
+        ></button>
+        <button type="button" class="open-buy-now-button">Buy now</button>
 
         <!-----------------------------MODAL BUY NOW ------------------------------->
+        <!-- <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu__container">
+          <button
+            class="mobile-menu__close-btn button"
+            type="button"
+            data-menu-close
+          >
+            <svg
+              aria-label="кнопка закриття вікна меню"
+              class="mobile-menu__close-btn-icon"
+            >
+              <use href="./images/sprite.svg#icon-close-button"></use>
+            </svg>
+          </button>
+          <ul class="list mobile-menu__menu">
+            <li>
+              <a class="mobile-menu__link current link" href="./index.html"
+                >Студія</a
+              >
+            </li>
+            <li>
+              <a class="mobile-menu__link link" href="./portfolio.html"
+                >Портфоліо</a
+              >
+            </li>
+            <li>
+              <a class="mobile-menu__link link" href="#contacts">Контакти</a>
+            </li>
+          </ul>
+          <ul class="list mobile-menu__contacts">
+            <li>
+              <a class="mobile-menu__tel link" href="tel:+380961111111"
+                >+38 096 111 11 11</a
+              >
+            </li>
+            <li>
+              <a class="mobile-menu__mail link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="list mobile-menu__social-links-menu">
+            <li class="mobile-menu__list">
+              <a class="mobile-menu__social-link link" href="">Instagram</a>
+            </li>
+            <li class="mobile-menu__list">
+              <a class="mobile-menu__social-link link" href="">Twitter</a>
+            </li>
+            <li class="mobile-menu__list">
+              <a class="mobile-menu__social-link link" href="">Facebook</a>
+            </li>
+            <li class="mobile-menu__list">
+              <a class="mobile-menu__social-link link" href="">Linkedin</a>
+            </li>
+          </ul>
+        </div> -->
+
+        <!-----------------------------MODAL BURGER ------------------------------->
         <!-- <div class="mobile-menu" data-menu>
         <div class="container mobile-menu__container">
           <button
