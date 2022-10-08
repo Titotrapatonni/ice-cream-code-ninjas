@@ -44,27 +44,29 @@ button {
   list-style: none;
 }
 
-.btn_arrow {
+.btn__arrow {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 50px;
   height: 10px;
+  border: transparent;
+  background-color: transparent;
 }
 
-.arror_stem {
-  display: inline-block;
-  width: 100px;
+.arrow__stem {
+  position: relative;
+  width: 40px;
   height: 2px;
   background-color: #000;
-  border: 5px solid #000;
-  border-radius: 4px;
-  border-bottom: #000;
 }
 
-.arrow_tip {
-  display: block;
+.arrow__tip {
+  position: absolute;
+  top: -4px;
+  right: 0;
   width: 10px;
+  height: 10px;
   border-right: 2px solid #000;
   border-bottom: 2px solid #000;
   transform: rotate(-45deg);
