@@ -1,8 +1,11 @@
 .Products {
     padding-top: 60px;
     padding-bottom: 60px;
-    background-image: url(../images/products/mobile/Ice-cream-bgi.jpg), url(../images/products/mobile/Ice-coffee-bgi.jpg), url(../images/products/mobile/Milkshakes-bgi.jpg);
-    background-size: contain;
+    @media screen and(max-width: 767px) {
+        background-image: url(../images/products/mobile/Ice-cream-bgi.jpg), url(../images/products/mobile/Ice-coffee-bgi.jpg), url(../images/products/mobile/Milkshakes-bgi.jpg);
+        background-size: contain;
+    }
+    
 }
 
 .products__label {
