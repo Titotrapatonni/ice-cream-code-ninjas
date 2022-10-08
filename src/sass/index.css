@@ -58,6 +58,12 @@ address {
     background-size: contain;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .Products {
+    background-image: url(../images/products/tablet/tablet-bgi.jpg);
+    background-size: contain;
+  }
+}
 
 .products__label {
   margin-bottom: 12px;
@@ -69,6 +75,11 @@ address {
   text-align: center;
   text-transform: uppercase;
   color: #131313;
+}
+@media screen and (min-width: 768px) {
+  .products__label {
+    font-size: 22px;
+  }
 }
 
 .products__title {
@@ -83,12 +94,26 @@ address {
   text-transform: uppercase;
   color: #131313;
 }
+@media screen and (min-width: 768px) {
+  .products__title {
+    margin-bottom: 200px;
+    font-size: 34px;
+  }
+}
 
 .products__list {
   display: flex;
   flex-direction: column;
   align-items: center;
   row-gap: 164px;
+}
+@media screen and (min-width: 768px) {
+  .products__list {
+    flex-direction: unset;
+    justify-content: center;
+    -moz-column-gap: 16px;
+         column-gap: 16px;
+  }
 }
 
 .products__item {
@@ -107,6 +132,18 @@ address {
 .products__item:nth-child(3) {
   background-color: #D6936D;
 }
+@media screen and (min-width: 768px) {
+  .products__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 108px;
+    padding-left: 26px;
+    padding-right: 26px;
+    width: 224px;
+    height: 100%;
+  }
+}
 
 .products__item::before {
   position: absolute;
@@ -115,6 +152,13 @@ address {
   width: 201px;
   height: 211px;
   content: "";
+}
+@media screen and (min-width: 768px) {
+  .products__item::before {
+    display: inline-flex;
+    width: 200px;
+    transform: translateY(-120px);
+  }
 }
 
 .products__item:nth-child(1)::before {
@@ -142,6 +186,13 @@ address {
   width: 201px;
   height: 200px;
   content: "";
+}
+@media screen and (min-width: 768px) {
+  .products__item::after {
+    display: inline-flex;
+    width: 200px;
+    transform: translateY(-120px);
+  }
 }
 
 .products__item:nth-child(1)::after {
@@ -177,6 +228,11 @@ address {
   text-transform: uppercase;
   color: #131313;
 }
+@media screen and (min-width: 768px) {
+  .products__category {
+    font-size: 22px;
+  }
+}
 
 .products__description {
   margin-bottom: 90px;
@@ -188,6 +244,12 @@ address {
   text-align: center;
   letter-spacing: 0.04em;
   color: #131313;
+}
+@media screen and (min-width: 768px) {
+  .products__description {
+    margin-bottom: 60px;
+    flex-grow: 1;
+  }
 }
 
 .btn__arrow {
