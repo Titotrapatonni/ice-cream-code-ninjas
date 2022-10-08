@@ -79,6 +79,15 @@ address {
   height: 100%;
 }
 
+body {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.76;
+  letter-spacing: 0.04em;
+}
+
 .btn__arrow {
   display: flex;
   justify-content: center;
