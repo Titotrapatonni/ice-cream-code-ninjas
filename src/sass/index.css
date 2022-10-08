@@ -56,12 +56,15 @@ address {
   .Products {
     background-image: url(../images/products/mobile/Ice-cream-bgi.jpg), url(../images/products/mobile/Ice-coffee-bgi.jpg), url(../images/products/mobile/Milkshakes-bgi.jpg);
     background-size: contain;
+    width: 480px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .Products {
     background-image: url(../images/products/tablet/tablet-bgi.jpg);
     background-size: contain;
+    background-repeat: no-repeat;
+    width: 768px;
   }
 }
 
@@ -106,6 +109,7 @@ address {
   flex-direction: column;
   align-items: center;
   row-gap: 164px;
+  list-style: none;
 }
 @media screen and (min-width: 768px) {
   .products__list {
