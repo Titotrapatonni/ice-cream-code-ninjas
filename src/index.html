@@ -13,9 +13,143 @@
     <link rel="stylesheet" href="./sass/index.scss" />
     <script type="module" src="./index.js"></script>
   </head>
+
   <body>
-    <h1>Ice Cream by Code Ninjas</h1>
-    <!-- Add partials like so for every page -->
-    
+    <!------------------------HEADER-------------------------------->
+    <header class="page-header">
+      <div class="page-header__container">
+        <nav class="page-nav">
+          <a class="page-logo">
+            <picture>
+              <source
+                srcset="
+                  ./images/img-logo/logo-desktop/Logo-desktop.webp 1x,
+                  ./images/img-logo/logo-desktop/Logo-desktop.webp 2x
+                "
+                media="(min-width:1200px)"
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  ./images/img-logo/logo-desktop/Logo-desktop.png 1x,
+                  ./images/img-logo/logo-desktop/Logo-desktop.png 2x
+                "
+                media="(min-width:1200px)"
+              />
+              <source
+                srcset="
+                  ./images/img-logo/logo-tablet/Logo-tablet.webp 1x,
+                  ./images/img-logo/logo-tablet/Logo-tablet.webp 2x
+                "
+                media="(min-width:768px)"
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  ./images/img-logo/logo-tablet/Logo-tablet.png 1x,
+                  ./images/img-logo/logo-tablet/Logo-tablet.png 2x
+                "
+                media="(min-width:768px)"
+              />
+              <source
+                srcset="
+                  ./images/img-logo/logo-mobile/Logo-mobile.webp 1x,
+                  ./images/img-logo/logo-mobile/Logo-mobile.webp 2x
+                "
+                media="(max-width:767px)"
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  ./images/img-logo/logo-mobile/Logo-mobile.png 1x,
+                  ./images/img-logo/logo-mobile/Logo-mobile.png 2x
+                "
+                media="(max-width:767px)"
+              />
+              <img
+                src="./images/img-logo/logo-desktop/Logo-desktop.png"
+                alt="logo"
+              />
+            </picture>
+          </a>
+          <ul class="page-nav__list">
+            <li class="page-nav__item">
+              <a class="page-nav__link" href="">Home</a>
+            </li>
+            <li class="page-nav__item">
+              <a class="page-nav__link" href="">How it's made?</a>
+            </li>
+            <li class="page-nav__item">
+              <a class="page-nav__link" href="">Our products</a>
+            </li>
+            <li class="page-nav__item">
+              <a class="page-nav__link" href="">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <button type="button" class="open-mobile-menu-button" data-menu-open>
+          Buy now
+        </button>
+
+        <!-----------------------------MODAL BUY NOW ------------------------------->
+        <!-- <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu__container">
+          <button
+            class="mobile-menu__close-btn button"
+            type="button"
+            data-menu-close
+          >
+            <svg
+              aria-label="кнопка закриття вікна меню"
+              class="mobile-menu__close-btn-icon"
+            >
+              <use href="./images/sprite.svg#icon-close-button"></use>
+            </svg>
+          </button>
+          <ul class="list mobile-menu__menu">
+            <li>
+              <a class="mobile-menu__link current link" href="./index.html"
+                >Студія</a
+              >
+            </li>
+            <li>
+              <a class="mobile-menu__link link" href="./portfolio.html"
+                >Портфоліо</a
+              >
+            </li>
+            <li>
+              <a class="mobile-menu__link link" href="#contacts">Контакти</a>
+            </li>
+          </ul>
+          <ul class="list mobile-menu__contacts">
+            <li>
+              <a class="mobile-menu__tel link" href="tel:+380961111111"
+                >+38 096 111 11 11</a
+              >
+            </li>
+            <li>
+              <a class="mobile-menu__mail link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="list mobile-menu__social-links-menu">
+            <li class="mobile-menu__list">
+              <a class="mobile-menu__social-link link" href="">Instagram</a>
+            </li>
+            <li class="mobile-menu__list">
+              <a class="mobile-menu__social-link link" href="">Twitter</a>
+            </li>
+            <li class="mobile-menu__list">
+              <a class="mobile-menu__social-link link" href="">Facebook</a>
+            </li>
+            <li class="mobile-menu__list">
+              <a class="mobile-menu__social-link link" href="">Linkedin</a>
+            </li>
+          </ul>
+        </div> -->
+      </div>
+    </header>
+    <!------------------------HEADER-------------------------------->
   </body>
 </html>
