@@ -35,6 +35,10 @@ button {
   cursor: pointer;
 }
 
+address {
+  font-style: normal;
+}
+
 .link {
   text-decoration: none;
   color: inherit;
