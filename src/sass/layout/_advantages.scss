@@ -1,5 +1,5 @@
 .advantages {
-    background-color: var(--primary-bg-color);
+    background-color: #84A178;
     padding-top: 42px;
     padding-bottom: 60px;
 }
@@ -104,4 +104,102 @@ li {
 .advantages__item:not(:last-child) {
     margin-right: 32px;
 }
+}
+
+.advantages__title {
+    text-align: center;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+    color: #FCFCFC; 
+    margin-bottom: 18px;
+    font-family: Roboto;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.17;
+}
+
+@media screen and (min-width: 768px){
+.advantages__title {
+    font-size: 48px;
+    line-height: 1.22;
+}
+}
+@media screen and (min-width: 1200px){
+.advantages__title {
+    font-size: 58px;
+}
+}
+
+.advantages__text {
+    text-align: center;
+    color: #FCFCFC; 
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.7;
+}
+
+@media screen and (min-width: 768px){
+.advantages__text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.71;
+}
+}
+
+@media screen and (min-width: 1200px){
+.advantages__text {
+    padding-left: 32px;
+    padding-right: 32px;
+    font-size: 16px;
+    line-height: 1.75;
+}
+}
+
+.advantages__title-cow:before {
+    content: "";
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-color: #F8D24E;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 17px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+.advantages__title-weight:before {
+    content: "";
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-color: #F8D24E;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 17px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+.advantages__title-ice:before {
+    content: "";
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-color: #F8D24E;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 17px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
 }
