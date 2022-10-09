@@ -128,7 +128,7 @@ address {
 @media screen and (min-width: 768px) {
   .products__list {
     flex-direction: unset;
-    justify-content: center;
+    justify-content: space-evenly;
     -moz-column-gap: 16px;
          column-gap: 16px;
     row-gap: 0;

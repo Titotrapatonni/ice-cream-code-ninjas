@@ -71,7 +71,7 @@
 
     @media screen and(min-width: 768px) {
         flex-direction: unset;
-        justify-content: center;
+        justify-content: space-evenly;
         column-gap: 16px;
         row-gap: 0;
     }
