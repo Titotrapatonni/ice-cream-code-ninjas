@@ -2,18 +2,18 @@
 .Products {
     padding-top: 60px;
     padding-bottom: 60px;
-    background-image: url(../images/products/mobile/ice-cream-bgi.jpg), url(../images/products/mobile/ice-coffee-bgi.jpg), url(../images/products/mobile/milkshakes-bgi.jpg);
+    background-image: url(../images/ice-cream-bgi.jpg), url(../images/ice-coffee-bgi.jpg), url(../images/milkshakes-bgi.jpg);
     background-size: contain;
     width: 480px;
 
     @media screen and (min-width: 768px) {
-        background-image: url(../images/products/tablet/tablet-bgi.jpg);
+        background-image: url(../images/tablet-bgi.jpg);
         background-repeat: no-repeat;
         width: 768px;
     }
 
     @media screen and (min-width: 1200px) {
-        background-image: url(../images/products/desktop-bgi.jpg);
+        background-image: url(../images/desktop-bgi.jpg);
         width: 1200px;
     }
 }
@@ -185,21 +185,21 @@
 }
 
 .products__item:nth-child(1)::after {
-    background-image: url(../images/products/mobile/ice-cream@2x.jpg);
+    background-image: url(../images/ice-cream@2x.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 50%;
 }
 
 .products__item:nth-child(2)::after {
-    background-image: url(../images/products/mobile/ice-coffee@2x.jpg);
+    background-image: url(../images/ice-coffee@2x.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 50%;
 }
 
 .products__item:nth-child(3)::after {
-    background-image: url(../images/products/mobile/milkshakes@2x.jpg);
+    background-image: url(../images/milkshakes@2x.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 50%;
@@ -262,17 +262,12 @@
     margin-right: auto;
     margin-left: auto;
     margin-top: auto;
-    margin-bottom: 20px;
+    margin-bottom: 0;
     width: 50px;
     height: 10px;
 
     border: transparent;
     background-color: transparent;
-
-    @media screen and (min-width: 768px) {
-        
-        margin-top: auto;
-    }
 }
 
 .arrow__stem {
