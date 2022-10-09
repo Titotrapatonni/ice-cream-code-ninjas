@@ -1,0 +1,203 @@
+// .container {
+//     max-width: 480px;
+//     padding-left: 20px;
+//     padding-right: 20px;
+
+//     margin-left: auto;
+//     margin-right: auto;
+// }
+
+// @media screen and (min-width: 768px) {
+//     .container {
+//         max-width: 768px;
+//         padding-left: 32px;
+//         padding-right: 32px;
+//     }
+// }
+
+// @media screen and (min-width: 1200px) {
+//     .container {
+//         max-width: 1200px;
+//     }
+// }
+
+
+
+
+// .hero {
+//     background: #84A178;
+//     // background-image: url(../images/phone/dots.svg);
+//     // background-repeat: no-repeat;
+//     // background-size: 100%;
+//     // background-position: bottom;
+
+
+//     // height: 502px;
+// }
+
+// .position {
+//     position: relative;
+//     // height: 502px;
+// }
+
+// .hero__title {
+//     font-family: 'Seymour One';
+//     font-style: normal;
+//     font-weight: 400;
+//     font-size: 26px;
+//     line-height: 1.26;
+//     letter-spacing: 0.04em;
+//     text-transform: uppercase;
+//     color: #FCFCFC;
+
+//     width: 247px;
+//     padding-top: 60px;
+//     margin-bottom: 32px;
+// }
+
+// .hero__title--size {
+//     font-size: 34px;
+//     line-height: 96.5%;
+// }
+
+// .hero__menu-btn {
+//     // font-family: 'Montserrat';
+//     font-style: normal;
+//     font-weight: 600;
+//     font-size: 8px;
+//     line-height: 10px;
+//     color: black;
+
+//     display: flex;
+//     gap: 8px;
+
+//     margin-bottom: 190px;
+// }
+
+// .hero__btn-border {
+//     width: 62px;
+//     height: 24px;
+//     background-color: transparent;
+//     border: 2px solid #F8D24E;
+//     border-radius: 8px;
+//     color: black;
+// }
+
+// .hero__btn {
+//     width: 83px;
+//     height: 24px;
+//     background-color: transparent;
+//     border: none;
+
+//     color: #F8D24E;
+//     text-decoration-line: underline;
+// }
+
+// .hero__dots-img {
+//     width: 100%;
+// }
+
+// .hero__ice-cream-img {
+//     position: absolute;
+//     bottom: 0;
+//     left: 50%;
+//     transform: translateX(-55%);
+//     z-index: 10;
+
+// }
+
+
+
+
+// @media screen and (max-width: 767px){
+
+// .hero__ice-cream-about {
+//     display: none;
+// }
+
+// .hero__menu-cafes {
+//     display: none;
+// }
+// }
+
+// @media screen and (min-width: 768px){
+
+//     .hero__title{
+//         font-size: 18px;
+//         line-height: 23px;
+
+//         width: 181px;
+//         padding-top: 40px;
+//         margin-bottom: 20px;
+//     }
+//     .hero__title--size {
+//         font-size: 24px;
+//         line-height: 13px;
+//     }
+
+//     .hero__menu-btn {
+//         // margin-bottom: 28px;
+//         margin-bottom: 125px;
+//     }
+
+//     .hero__ice-cream-about {
+//         display: flex;
+//         align-items: center;
+//         gap: 33px;
+
+//         position: absolute;
+//         bottom: 13;
+//         left: 32;
+//     }
+
+//     .hero__ice-cream-about-img {
+//         width: 152px;
+//     }
+
+//     .hero__ice-cream-about-text {
+//         font-weight: 400;
+//         font-size: 12px;
+//         line-height: 1.42;
+//         color: #FCFCFC;
+
+//         width: 151px;
+//     }
+
+//     .hero__menu-cafes {
+//         font-family: 'Montserrat';
+//         font-weight: 900;
+//         font-size: 28px;
+//         line-height: 34px;
+//         text-align: right;
+//         letter-spacing: 0.04em;
+//         text-transform: uppercase;
+//         color: #131313;
+
+//         margin-top: 28px;
+//         // display: flex;
+//         // position: absolute;
+//     }
+
+//     .hero__menu-cafes-type {
+//         font-weight: 400;
+//         font-size: 8px;
+//         line-height: 10px;
+        
+//         color: #FCFCFC;
+//         margin-top: 4px;
+//         // margin-bottom: 20px;
+//     }
+
+//     .hero__menu-cafes-item:not(:last-child) {
+//         margin-bottom: 20px;
+//     }
+
+//     .inside-container {
+//         display: flex;
+//         justify-content: space-between;
+//     }
+
+//     .hero__ice-cream-img {
+//         transform: translateX(8%);
+//     }
+// }
