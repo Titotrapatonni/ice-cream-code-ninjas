@@ -138,4 +138,48 @@ body {
   width: 16px;
   height: 16px;
   top: -6px;
+}
+
+.gallery {
+  background-image: linear-gradient(to bottom, #84A178 18.46%, #F5F5F5 18.46%, #F5F5F5 100%);
+}
+@media screen and (min-width: 768px) {
+  .gallery {
+    background-image: linear-gradient(to bottom, #84A178 50%, transparent 50%, transparent 100%);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .gallery {
+    background-image: linear-gradient(to bottom, #84A178 22.27%, #F5F5F5 22.27%, #F5F5F5 23.22%, transparent 23.22%, transparent 100%);
+  }
+}
+
+.gallery__img-box {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  border-radius: 7.40681px;
+  overflow: hidden;
+}
+@media screen and (min-width: 480px) {
+  .gallery__img-box {
+    width: 279px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .gallery__img-box {
+    width: 704px;
+    border-radius: 18px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .gallery__img-box {
+    width: 1013px;
+    border-radius: 24px;
+  }
+}
+
+.gallery__img {
+  display: block;
+  width: 100%;
 }/*# sourceMappingURL=index.css.map */
