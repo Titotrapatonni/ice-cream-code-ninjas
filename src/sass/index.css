@@ -324,6 +324,7 @@ address {
   margin-right: auto;
   margin-left: auto;
   margin-top: auto;
+  margin-bottom: 20px;
   width: 50px;
   height: 10px;
   border: transparent;
@@ -331,7 +332,6 @@ address {
 }
 @media screen and (min-width: 768px) {
   .btn__arrow {
-    margin-bottom: 20px;
     margin-top: auto;
   }
 }
