@@ -1,0 +1,98 @@
+.about {
+    background-color: $primary-bgc-color ;
+    &__lable {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 1.22;
+        text-align: center;
+        text-transform: uppercase;
+        color: $primary-text-color;
+        padding-top: 60px;
+        
+    }
+    &__title {
+        font-family: $title-font;
+        font-size: 30px;
+        line-height: 1.26;
+        text-align: center;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: $primary-text-color;
+        width: 200px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 12px;
+        margin-bottom: 32px;
+    }
+    &__list {
+        font-size: 12px;
+        line-height: 1.76;
+        text-align: center;
+        letter-spacing: 0.04em;
+        margin-left: auto;
+        margin-right: auto;
+        width: 220px;
+        color: $primary-text-color;
+    }
+    &__item {
+        &:nth-child(1) {
+                margin-bottom: 4px;
+            }
+    }
+    &__button {
+        width: 164px;
+        height: 42px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 1.29;
+        background-color: $acent-color;
+        color: $secondary-text-color;
+        &:hover {
+            background-color: $interactive-text-hover;
+        }
+        &:focus {
+            background-color: $interactive-text-hover;
+            color: $primary-text-color;
+        }
+    }
+}
+.about__svg {
+    color: $secondary-text-color;
+}
+.about_arrow {
+    fill: currentColor;
+}
+
+
+.about__picture {
+    margin-left: auto;
+    margin-right: auto;
+    width: 280px;
+    height: 280px;
+    position: relative;
+    background-color: rgba(248, 210, 78, 0.7);
+    border-radius: 50%;
+    margin-bottom: 62px;
+    box-shadow: 0px 4.48583px 16.8218px rgba(153, 114, 23, 0.25);
+}
+
+.about__images {
+    border-radius: 50%;
+    border-color: $primary-bgc-color;
+    position: absolute;
+    transform: translateY(22px);
+}
+
+@media screen and (max-width: 767px) {
+    .about__item_hidden {
+        display: none;
+    }
+}

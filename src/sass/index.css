@@ -48,6 +48,7 @@ address {
   list-style: none;
 }
 
+
 .Products {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -61,6 +62,7 @@ address {
     background-repeat: no-repeat;
     width: 768px;
   }
+
 }
 @media screen and (min-width: 1200px) {
   .Products {
@@ -69,46 +71,34 @@ address {
   }
 }
 
-.products__label {
-  margin-bottom: 12px;
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.22;
-  text-align: center;
-  text-transform: uppercase;
-  color: #131313;
+@media screen and (max-width: 767px) {
+  .container {
+    max-width: 480px;
+  }
 }
 @media screen and (min-width: 768px) {
-  .products__label {
-    font-size: 22px;
+  .container {
+    width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
   }
 }
 @media screen and (min-width: 1200px) {
+
   .products__label {
     font-size: 30px;
     letter-spacing: 0.04em;
   }
 }
 
-.products__title {
-  margin-bottom: 148px;
-  font-family: "Seymour One", san-serif;
+
+body {
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 30px;
-  line-height: 1.26;
-  text-align: center;
+  font-size: 14px;
+  line-height: 1.76;
   letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: #131313;
-}
-@media screen and (min-width: 768px) {
-  .products__title {
-    margin-bottom: 200px;
-    font-size: 34px;
-  }
 }
 @media screen and (min-width: 1200px) {
   .products__title {
@@ -118,8 +108,10 @@ address {
   }
 }
 
-.products__list {
+
+.btn__arrow {
   display: flex;
+
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
@@ -140,10 +132,12 @@ address {
     -moz-column-gap: 32px;
          column-gap: 32px;
   }
+
 }
 
-.products__item {
+.arrow__stem {
   position: relative;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -171,6 +165,7 @@ address {
     width: 224px;
     height: 428px;
   }
+
 }
 @media screen and (min-width: 1200px) {
   .products__item {
@@ -183,20 +178,17 @@ address {
   }
 }
 
-.products__item::before {
+.arrow__tip {
   position: absolute;
-  top: 0;
-  transform: translateY(-110px);
-  width: 201px;
-  height: 211px;
-  content: "";
-}
-@media screen and (min-width: 768px) {
-  .products__item::before {
-    display: inline-flex;
-    width: 200px;
-    transform: translateY(-120px);
-  }
+  top: -4px;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid #131313;
+  border-bottom: 2px solid #131313;
+  border-radius: 0 2px 1px 2px;
+  transform: rotate(-45deg);
+  transition: border-right 250ms ease-in-out, border-bottom 250ms ease-in-out, width 250ms ease-in-out, height 250ms ease-in-out, top 250ms ease-in-out;
 }
 @media screen and (min-width: 1200px) {
   .products__item::before {
@@ -205,6 +197,7 @@ address {
     transform: translateY(-180px);
   }
 }
+
 
 .products__item:nth-child(1)::before {
   background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
@@ -222,24 +215,19 @@ address {
   background: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #D9D9D9;
   box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
   border-radius: 50%;
+
 }
 
-.products__item::after {
-  position: absolute;
-  top: 0;
-  transform: translateY(-110px);
-  width: 201px;
-  height: 200px;
-  content: "";
+.gallery {
+  background-image: linear-gradient(to bottom, #84A178 18.46%, #F5F5F5 18.46%, #F5F5F5 100%);
 }
 @media screen and (min-width: 768px) {
-  .products__item::after {
-    display: inline-flex;
-    width: 200px;
-    transform: translateY(-120px);
+  .gallery {
+    background-image: linear-gradient(to bottom, #84A178 50%, transparent 50%, transparent 100%);
   }
 }
 @media screen and (min-width: 1200px) {
+
   .products__item::after {
     width: 302px;
     height: 300px;
@@ -266,25 +254,22 @@ address {
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 50%;
+
 }
 
-.products__category {
-  margin-bottom: 40px;
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.2;
-  text-align: center;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: #131313;
+.gallery__img-box {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  border-radius: 7.40681px;
+  overflow: hidden;
 }
-@media screen and (min-width: 768px) {
-  .products__category {
-    font-size: 22px;
+@media screen and (min-width: 480px) {
+  .gallery__img-box {
+    width: 279px;
   }
 }
+
 @media screen and (min-width: 1200px) {
   .products__category {
     margin-bottom: 65px;
@@ -341,15 +326,10 @@ address {
   width: 40px;
   height: 2px;
   background-color: #000;
+
 }
 
-.arrow__tip {
-  position: absolute;
-  top: -4px;
-  right: 0;
-  width: 10px;
-  height: 10px;
-  border-right: 2px solid #000;
-  border-bottom: 2px solid #000;
-  transform: rotate(-45deg);
+.gallery__img {
+  display: block;
+  width: 100%;
 }/*# sourceMappingURL=index.css.map */
