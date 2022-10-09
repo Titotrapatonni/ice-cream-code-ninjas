@@ -121,6 +121,10 @@ address {
   flex-direction: column;
   align-items: center;
   width: 280px;
+  padding-top: 123px;
+  padding-right: 40px;
+  padding-left: 40px;
+  padding-bottom: 20px;
   background-color: #AEC6A5;
   border-radius: 24px;
 }
@@ -132,6 +136,9 @@ address {
 }
 @media screen and (min-width: 768px) {
   .products__item {
+    padding-top: 108px;
+    padding-left: 26px;
+    padding-right: 26px;
     width: 224px;
     height: 428px;
   }
@@ -206,20 +213,6 @@ address {
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 100px;
-}
-
-.products__conteiner {
-  padding-top: 123px;
-  padding-right: 40px;
-  padding-left: 40px;
-  padding-bottom: 20px;
-}
-@media screen and (min-width: 768px) {
-  .products__conteiner {
-    padding-top: 108px;
-    padding-left: 26px;
-    padding-right: 26px;
-  }
 }
 
 .products__category {
