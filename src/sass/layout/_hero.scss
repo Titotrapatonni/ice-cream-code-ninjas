@@ -10,6 +10,8 @@
 @media screen and (min-width: 768px) {
     .container {
         max-width: 768px;
+        padding-left: 32px;
+        padding-right: 32px;
     }
 }
 
@@ -25,7 +27,11 @@
 .hero {
     background: #84A178;
     position: relative;
-    height: 502px;
+    // height: 502px;
+}
+
+.position {
+    position: relative;
 }
 
 .hero__title {
@@ -43,6 +49,11 @@
     margin-bottom: 32px;
 }
 
+.hero__title--size {
+    font-size: 34px;
+    line-height: 96.5%;
+}
+
 .hero__menu-btn {
     // font-family: 'Montserrat';
     font-style: normal;
@@ -53,7 +64,6 @@
 
     display: flex;
     gap: 8px;
-
 
     margin-bottom: 190px;
 }
@@ -78,22 +88,18 @@
 }
 
 .hero__dots-img {
-    // position: absolute;
-    width: 428px;
-    // bottom: 0;
-    // left: 20px;
-
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
 }
 
 .hero__ice-cream-img {
-    width: 320px;
-    // height: 219px;
     position: absolute;
-    bottom: -61;
-    left: 82px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-55%);
     z-index: 10;
+
+    width: 170px;
+    height: auto;
 }
 
 
@@ -108,4 +114,86 @@
 .hero__menu-cafes {
     display: none;
 }
+}
+
+@media screen and (min-width: 768px){
+
+    .hero__title{
+        font-size: 18px;
+        line-height: 23px;
+
+        width: 181px;
+        padding-top: 40px;
+        margin-bottom: 20px;
+    }
+    .hero__title--size {
+        font-size: 24px;
+        line-height: 13px;
+    }
+
+    .hero__menu-btn {
+        // margin-bottom: 28px;
+        margin-bottom: 125px;
+    }
+
+    .hero__ice-cream-about {
+        display: flex;
+        align-items: center;
+        gap: 33px;
+
+        position: absolute;
+        bottom: 13;
+        left: 32;
+    }
+
+    .hero__ice-cream-about-img {
+        width: 152px;
+    }
+
+    .hero__ice-cream-about-text {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.42;
+        color: #FCFCFC;
+
+        width: 151px;
+    }
+
+    .hero__menu-cafes {
+        font-family: 'Montserrat';
+        font-weight: 900;
+        font-size: 28px;
+        line-height: 34px;
+        text-align: right;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: #131313;
+
+        margin-top: 28px;
+        // display: flex;
+        // position: absolute;
+    }
+
+    .hero__menu-cafes-type {
+        font-weight: 400;
+        font-size: 8px;
+        line-height: 10px;
+        
+        color: #FCFCFC;
+        margin-top: 4px;
+        // margin-bottom: 20px;
+    }
+
+    .hero__menu-cafes-item:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    .inside-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .hero__ice-cream-img {
+        transform: translateX(8%);
+    }
 }

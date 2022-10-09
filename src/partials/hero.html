@@ -1,5 +1,7 @@
 <section class="hero">
-    <div class="container">
+    <div class="container position">
+        <div class="inside-container">
+        <div>
         <h1 class="hero__title">ice cream made with <span class="hero__title--size">passion</span></h1>
         <ul class="hero__menu-btn list">
             <li class="hero__menu-btn-item">
@@ -9,15 +11,7 @@
                 <button type="button" class="hero__btn">How it’s made?</button>
             </li>
         </ul>
-
-        <div class="hero__ice-cream-about">
-            <img src="./images/tablet/plate-ice-cream.jpg" alt="" class="hero__ice-cream-about-img">
-            <p class="hero__ice-cream-about-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
         </div>
-
-        <img src="./images/phone/dots.svg" alt="dots" class="hero__dots-img">
-
-        <img src="./images/phone/ice-cream.png" alt="ice-cream" class="hero__ice-cream-img">
 
         <ul class="hero__menu-cafes list">
             <li class="hero__menu-cafes-item">
@@ -29,6 +23,49 @@
                 <p class="hero__menu-cafes-type">food trucks</p>
             </li>
         </ul>
+        </div>
 
+        <div class="hero__ice-cream-about">
+            <img src="./images/tablet/plate-ice-cream.png" alt="" class="hero__ice-cream-about-img">
+            <p class="hero__ice-cream-about-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+        </div>
+
+        <picture>
+            <source
+                srcset="./images/desktop/dots.svg"
+                media="(min-width: 1200px)"
+            >
+
+            <source
+                srcset="./images/tablet/dots.svg"
+                media="(min-width: 768px)"
+            >
+
+            <source
+                srcset="./images/phone/dots.svg"
+                media="(max-width: 767px)"
+            >
+
+            <img src="./images/phone/dots.svg" alt="dots" class="hero__dots-img">
+        </picture>
+
+        <picture>
+            <source
+                srcset="./images/desktop/ice-cream1.png 1x, ./images/desktop/ice-cream@2x.png 2x"
+                media="(min-width: 1200px)"
+            >
+
+            <source
+                srcset="./images/tablet/ice-cream.png 1x, ./images/tablet/ice-cream@2x.png 2x"
+                media="(min-width: 768px)"
+            >
+
+            <source
+                srcset="./images/phone/ice-cream.png 1x, ./images/phone/ice-cream@2x.png 2x"
+                media="(max-width: 767px)"
+            >
+
+            <img src="./images/phone/ice-cream.png" alt="ice-cream" class="hero__ice-cream-img">
+        </picture>
     </div>
 </section>
