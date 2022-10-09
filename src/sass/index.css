@@ -35,6 +35,10 @@ button {
   cursor: pointer;
 }
 
+address {
+  font-style: normal;
+}
+
 .link {
   text-decoration: none;
   color: inherit;
@@ -44,12 +48,53 @@ button {
   list-style: none;
 }
 
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    max-width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    margin: 0 auto;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+.container {
+  height: 100%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.76;
+  letter-spacing: 0.04em;
+}
+
+
 .btn__arrow {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50px;
-  height: 10px;
+  width: 60px;
+  height: 30px;
   border: transparent;
   background-color: transparent;
 }
@@ -58,7 +103,10 @@ button {
   position: relative;
   width: 40px;
   height: 2px;
-  background-color: #000;
+
+  background-color: #131313;
+  transform: scaleX(100%);
+  transition: transform 250ms ease-in-out, height 250ms ease-in-out;
 }
 
 .arrow__tip {
@@ -67,7 +115,73 @@ button {
   right: 0;
   width: 10px;
   height: 10px;
-  border-right: 2px solid #000;
-  border-bottom: 2px solid #000;
+  border-right: 2px solid #131313;
+  border-bottom: 2px solid #131313;
+  border-radius: 0 2px 1px 2px;
   transform: rotate(-45deg);
+  transition: border-right 250ms ease-in-out, border-bottom 250ms ease-in-out, width 250ms ease-in-out, height 250ms ease-in-out, top 250ms ease-in-out;
+}
+
+.btn__arrow:hover .arrow__stem {
+  transform: scaleX(120%);
+}
+
+.btn__arrow:focus {
+  border: inherit;
+  outline: inherit;
+}
+.btn__arrow:focus .arrow__stem {
+  transform: scaleX(120%);
+  height: 3px;
+}
+.btn__arrow:focus .arrow__tip {
+  border-right: 3px solid #131313;
+  border-bottom: 3px solid #131313;
+  width: 16px;
+  height: 16px;
+  top: -6px;
+}
+
+.gallery {
+  background-image: linear-gradient(to bottom, #84A178 18.46%, #F5F5F5 18.46%, #F5F5F5 100%);
+}
+@media screen and (min-width: 768px) {
+  .gallery {
+    background-image: linear-gradient(to bottom, #84A178 50%, transparent 50%, transparent 100%);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .gallery {
+    background-image: linear-gradient(to bottom, #84A178 22.27%, #F5F5F5 22.27%, #F5F5F5 23.22%, transparent 23.22%, transparent 100%);
+  }
+}
+
+.gallery__img-box {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  border-radius: 7.40681px;
+  overflow: hidden;
+}
+@media screen and (min-width: 480px) {
+  .gallery__img-box {
+    width: 279px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .gallery__img-box {
+    width: 704px;
+    border-radius: 18px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .gallery__img-box {
+    width: 1013px;
+    border-radius: 24px;
+  }
+}
+
+.gallery__img {
+  display: block;
+  width: 100%;
 }/*# sourceMappingURL=index.css.map */
