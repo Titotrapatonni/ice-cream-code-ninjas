@@ -1,45 +1,44 @@
 .about {
     background-color: $primary-bgc-color ;
+    padding-top: 60px;
     &__lable {
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 1.22;
         text-align: center;
         text-transform: uppercase;
         color: $primary-text-color;
         padding-top: 60px;
-    
+
     }
     &__title {
         font-family: $title-font;
-        font-size: 30px;
-        line-height: 1.26;
         text-align: center;
-        letter-spacing: 0.04em;
+        line-height: 1.26;
         text-transform: uppercase;
         color: $primary-text-color;
-        width: 200px;
         margin-left: auto;
         margin-right: auto;
         padding-top: 12px;
-        margin-bottom: 32px;
+    }
+    &__picture {
+    background-color: rgba(248, 210, 78, 0.7);
+    border-radius: 50%;
+    box-shadow: 0px 4.48583px 16.8218px rgba(153, 114, 23, 0.25);
+    }
+    &__images {
+    border-radius: 50%;
+    border-color: $primary-bgc-color;
+    position: absolute;
     }
     &__list {
-        font-size: 12px;
-        line-height: 1.76;
-        text-align: center;
-        letter-spacing: 0.04em;
-        margin-left: auto;
-        margin-right: auto;
-        width: 220px;
         color: $primary-text-color;
     }
+
     &__item {
         &:nth-child(1) {
                 margin-bottom: 4px;
             }
     }
     .about__modal-button {
+
         width: 164px;
         height: 42px;
         border-radius: 10px;
@@ -47,9 +46,6 @@
         justify-content: center;
         align-items: center;
         gap: 5px;
-        margin-top: 20px;
-        margin-left: auto;
-        margin-right: auto;
         font-weight: 600;
         font-size: 14px;
         line-height: 1.29;
@@ -70,29 +66,150 @@
 .about_arrow {
     fill: currentColor;
 }
-
-
-.about__picture {
-    margin-left: auto;
-    margin-right: auto;
-    width: 280px;
-    height: 280px;
-    position: relative;
-    background-color: rgba(248, 210, 78, 0.7);
-    border-radius: 50%;
-    margin-bottom: 62px;
-    box-shadow: 0px 4.48583px 16.8218px rgba(153, 114, 23, 0.25);
-}
-
-.about__images {
-    border-radius: 50%;
-    border-color: $primary-bgc-color;
-    position: absolute;
-    transform: translateY(22px);
-}
-
+                            // //////////MOBILE//////////////////
 @media screen and (max-width: 767px) {
-    .about__item_hidden {
-        display: none;
+    .about {
+        padding-bottom: 42px;
+        &__lable {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 1.22;
     }
+        &__item_hidden {
+            display: none;
+        }
+        &__title {
+        font-size: 30px;
+        letter-spacing: 0.04em;
+        width: 200px;
+        margin-bottom: 32px;
+        }
+        &__picture {
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 62px;
+        width: 280px;
+        height: 280px;
+    }
+        &__images {
+            transform: translateY(22px);
+        }
+        &__list {
+        margin-left: auto;
+        margin-right: auto;
+        width: 220px;
+        text-align: center;
+    }
+    &__item_first {
+        font-size: 12px;
+        line-height: 1.76;
+        letter-spacing: 0.04em;
+    }
+    &__item_second {
+        font-size: 12px;
+        line-height: 1.62;
+    }
+        &__item {
+            &:nth-child(1) {
+                padding-bottom: 4px;
+            }
+    }
+        &__button {
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        }
+}
+}
+                            // ////////////////TABLET//////////////////////
+@media screen and (min-width: 768px) {
+    .about {
+        padding-bottom: 53px;
+        &__lable {
+        font-weight: 800;
+        font-size: 22px;
+        line-height: 1.23;
+        letter-spacing: 0.04em;
+    }
+        &__title {
+            font-size: 34px;
+            letter-spacing: 0.06em;
+            margin-bottom: 79px;
+    }
+        &__picture {
+            position: absolute;
+            width: 335px;
+            height: 330px;
+        }
+        &__images {
+            transform: translateY(26px);
+        }
+        &__list {
+            padding-left: 368px;
+            padding-right: 5px;
+        }
+        &__item_first, &__item_second {
+        line-height: 1.76;
+    }
+    &__item_third {
+        line-height: 1.94;
+        padding-right: 70px;
+    }
+        &__item {
+            font-size: 12px;
+            letter-spacing: 0.04em;
+            &:not(:last-child) {
+                padding-bottom: 8px;
+            }
+    }
+        &__button {
+            margin-top: 48px;
+            margin-left: 368px;
+        }
+}
+}
+                            /////////////// DESKTOP///////////////
+@media screen and (min-width: 1200px) {
+    .about{
+    padding-bottom: 152px;
+    position: relative;
+    &__lable {
+        font-weight: 800;
+        font-size: 30px;
+        line-height: 1.24;
+    }
+    &__title {
+        font-size: 36px;
+        line-height: 1.25;
+        margin-bottom: 172px;
+    }
+    &__picture {
+        width: 500px;
+        height: 500px;
+        transform: translateY(-82px);
+        }
+        &__images {
+        transform: translateY(39px);
+        }
+        &__list {
+            padding-left: 600px;
+        }
+        &__item_first{
+            font-size: 16px;
+            line-height: 1.76;
+        } 
+        &__item_second, &__item_third {
+        font-size: 14px;
+    }
+        &__item_first, &__item_second {
+        padding-right: 105px;
+        }
+        &__item_third {
+            padding-right: 100px;
+        }
+        &__button {
+            margin-left: 600px;
+        }
+    } 
 }
