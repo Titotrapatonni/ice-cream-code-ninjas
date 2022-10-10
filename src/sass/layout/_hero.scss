@@ -1,39 +1,9 @@
-.container {
-    max-width: 480px;
-    padding-left: 20px;
-    padding-right: 20px;
-
-    margin-left: auto;
-    margin-right: auto;
-}
-
-@media screen and (min-width: 768px) {
-    .container {
-        max-width: 768px;
-        padding-left: 32px;
-        padding-right: 32px;
-    }
-}
-
-@media screen and (min-width: 1200px) {
-    .container {
-        max-width: 1200px;
-    }
-}
-
-
-
-
 .hero {
-    background: #84A178;
+    background: $primary-bgc-color;
     background-image: url(../images/phone-dots.svg);
     background-repeat: no-repeat;
     background-size: 480px;
     background-position: bottom;
-    // max-width: 480px;
-
-
-    // height: 502px;
 }
 
 .position {
@@ -42,7 +12,7 @@
 }
 
 .hero__title {
-    font-family: 'Seymour One';
+    font-family: $title-font;
     font-style: normal;
     font-weight: 400;
     font-size: 26px;
@@ -62,12 +32,11 @@
 }
 
 .hero__menu-btn {
-    // font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
     font-size: 8px;
     line-height: 10px;
-    color: black;
+    color: $secondary-text-color;
 
     display: flex;
     gap: 8px;
@@ -81,7 +50,7 @@
     background-color: transparent;
     border: 2px solid #F8D24E;
     border-radius: 8px;
-    color: black;
+    color: $secondary-text-color;
 }
 
 .hero__btn {
@@ -129,7 +98,7 @@
     }
 
     .position {
-        height: 350px; //
+        height: 350px;
     }
 
     .hero__title {
@@ -148,7 +117,6 @@
 
     .hero__menu-btn {
         margin-bottom: 28px;
-        // margin-bottom: 125px;
     }
 
     .hero__ice-cream-about {
@@ -179,19 +147,16 @@
     }
 
     .hero__menu-cafes-number {
-        font-family: 'Montserrat';
         font-weight: 900;
         font-size: 28px;
         line-height: 34px;
         text-align: right;
         letter-spacing: 0.04em;
         text-transform: uppercase;
-        color: #131313;
+        color: $secondary-text-color;
     }
 
     .hero__menu-cafes-type {
-        font-family: 'Montserrat';
-
         font-weight: 400;
         font-size: 8px;
         line-height: 10px;
