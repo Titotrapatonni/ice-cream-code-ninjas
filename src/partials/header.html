@@ -1,0 +1,145 @@
+<!------------------------HEADER-------------------------------->
+<header class="page-header">
+  <div class="page-header__container container">
+    <nav class="page-nav">
+      <a class="page-logo">
+        <picture>
+          <source
+            srcset="
+              ./images/logo-desktop/logo-desktop.webp    1x,
+              ./images/logo-desktop/logo-desktop@2x.webp 2x
+            "
+            media="(min-width:1200px)"
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./images/logo-desktop/logo-desktop.png    1x,
+              ./images/logo-desktop/logo-desktop@2x.png 2x
+            "
+            media="(min-width:1200px)"
+          />
+          <source
+            srcset="
+              ./images/logo-tablet/logo-tablet.webp    1x,
+              ./images/logo-tablet/logo-tablet@2x.webp 2x
+            "
+            media="(min-width:768px)"
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./images/logo-tablet/logo-tablet.png    1x,
+              ./images/logo-tablet/logo-tablet@2x.png 2x
+            "
+            media="(min-width:768px)"
+          />
+          <source
+            srcset="
+              ./images/logo-mobile/logo-mobile.webp    1x,
+              ./images/logo-mobile/logo-mobile@2x.webp 2x
+            "
+            media="(max-width:767px)"
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./images/logo-mobile/logo-mobile.png    1x,
+              ./images/logo-mobile/logo-mobile@2x.png 2x
+            "
+            media="(max-width:767px)"
+          />
+          <img src="./images/logo-desktop/logo-desktop.png" alt="logo" />
+        </picture>
+      </a>
+      <ul class="page-nav__list list">
+        <li class="page-nav__item">
+          <a class="page-nav__link link" href="">Home</a>
+        </li>
+        <li class="page-nav__item">
+          <a class="page-nav__link link" href="">How it's made?</a>
+        </li>
+        <li class="page-nav__item">
+          <a class="page-nav__link link" href="">Our products</a>
+        </li>
+        <li class="page-nav__item">
+          <a class="page-nav__link link" href="">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <button type="button" class="open-mobile-menu-button" data-menu-open>
+      <svg aria-label="menu button" class="open-mobile-menu-button__icon">
+        <use href="./images/sprite.svg#icon-burger"></use>
+      </svg>
+    </button>
+    <button type="button" class="open-buy-now-button">Buy now</button>
+  </div>
+
+  <!-----------------------------MODAL BURGER ------------------------------->
+  <div class="mobile-menu">
+    <div class="container mobile-menu__container">
+      <button
+        class="mobile-menu__close-btn button"
+        type="button"
+        data-menu-close
+      >
+        <svg
+          aria-label="window menu close button"
+          class="mobile-menu__close-btn-icon"
+        >
+          <use href="./images/sprite.svg#icon-close"></use>
+        </svg>
+      </button>
+      <picture>
+        <source
+          srcset="
+            ./images/logo-tablet/logo-tablet.webp    1x,
+            ./images/logo-tablet/logo-tablet@2x.webp 2x
+          "
+          media="(min-width:768px)"
+          type="image/webp"
+        />
+        <source
+          srcset="
+            ./images/logo-tablet/logo-tablet.png    1x,
+            ./images/logo-tablet/logo-tablet@2x.png 2x
+          "
+          media="(min-width:768px)"
+        />
+        <source
+          srcset="
+            ./images/logo-mobile/logo-mobile.webp    1x,
+            ./images/logo-mobile/logo-mobile@2x.webp 2x
+          "
+          media="(max-width:767px)"
+          type="image/webp"
+        />
+        <source
+          srcset="
+            ./images/logo-mobile/logo-mobile.png    1x,
+            ./images/logo-mobile/logo-mobile@2x.png 2x
+          "
+          media="(max-width:767px)"
+        />
+        <img src="./images/logo-mobile/logo-mobile.png" alt="logo" />
+      </picture>
+      <ul class="list mobile-menu__menu">
+        <li class="mobile-menu__list">
+          <a class="mobile-menu__link link" href="#">Home</a>
+        </li>
+        <li class="mobile-menu__list">
+          <a class="mobile-menu__link link" href="#">How it's made?</a>
+        </li>
+        <li class="mobile-menu__list">
+          <a class="mobile-menu__link link" href="#">Our products</a>
+        </li>
+        <li class="mobile-menu__list">
+          <a class="mobile-menu__link link" href="#">Contact</a>
+        </li>
+      </ul>
+      <button type="button" class="open-buy-now-button">Buy now</button>
+    </div>
+  </div>
+  <!-----------------------------MODAL BURGER ------------------------------->
+</header>
+<!------------------------HEADER-------------------------------->
