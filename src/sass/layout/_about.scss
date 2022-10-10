@@ -5,7 +5,10 @@
         text-align: center;
         text-transform: uppercase;
         color: $primary-text-color;
+<<<<<<< Updated upstream
         padding-top: 60px;
+=======
+>>>>>>> Stashed changes
     }
     &__title {
         font-family: $title-font;
@@ -13,9 +16,7 @@
         line-height: 1.26;
         text-transform: uppercase;
         color: $primary-text-color;
-        margin-left: auto;
-        margin-right: auto;
-        padding-top: 12px;
+        margin: 12px  auto 0px auto ;
     }
     &__picture {
     background-color: rgba(248, 210, 78, 0.7);
@@ -104,7 +105,7 @@
     }
         &__item {
             &:nth-child(1) {
-                padding-bottom: 4px;
+                margin-bottom: 4px;
             }
     }
         &__button {
@@ -138,15 +139,15 @@
             transform: translateY(26px);
         }
         &__list {
-            padding-left: 368px;
-            padding-right: 5px;
+            margin-left: 368px;
+            margin-right: 5px;
         }
         &__item_first, &__item_second {
         line-height: 1.76;
     }
     &__item_third {
         line-height: 1.94;
-        padding-right: 70px;
+        margin-right: 70px;
     }
         &__item {
             font-size: 12px;
@@ -185,7 +186,7 @@
         transform: translateY(39px);
         }
         &__list {
-            padding-left: 600px;
+            margin-left: 600px;
         }
         &__item_first{
             font-size: 16px;
@@ -195,10 +196,10 @@
         font-size: 14px;
     }
         &__item_first, &__item_second {
-        padding-right: 105px;
+        margin-right: 105px;
         }
         &__item_third {
-            padding-right: 100px;
+            margin-right: 100px;
         }
         &__button {
             margin-left: 600px;
