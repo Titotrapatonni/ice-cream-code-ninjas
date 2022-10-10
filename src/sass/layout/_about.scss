@@ -5,7 +5,6 @@
         text-align: center;
         text-transform: uppercase;
         color: $primary-text-color;
-        padding-top: 60px;
 
     }
     &__title {
@@ -16,7 +15,7 @@
         color: $primary-text-color;
         margin-left: auto;
         margin-right: auto;
-        padding-top: 12px;
+        margin-top: 12px;
     }
     &__picture {
     background-color: rgba(248, 210, 78, 0.7);
@@ -113,7 +112,7 @@
     }
         &__item {
             &:nth-child(1) {
-                padding-bottom: 4px;
+                margin-bottom: 4px;
             }
     }
         &__button {
@@ -161,7 +160,7 @@
             font-size: 12px;
             letter-spacing: 0.04em;
             &:not(:last-child) {
-                padding-bottom: 8px;
+                margin-bottom: 8px;
             }
     }
         &__button {
