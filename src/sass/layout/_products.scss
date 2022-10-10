@@ -1,3 +1,4 @@
+
 .Products {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -253,24 +254,20 @@
 }
 
 
+
 .btn__arrow {
     display: flex;
     justify-content: center;
     align-items: center;
-
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: auto;
-    margin-bottom: 0;
-    width: 50px;
-    height: 10px;
-
+    width: 60px;
+    height: 30px;
     border: transparent;
     background-color: transparent;
 }
 
 .arrow__stem {
     position: relative;
+
     width: 40px;
     height: 2px;
     background-color: $secondary-text-color;
