@@ -51,6 +51,7 @@
         line-height: 1.29;
         background-color: $acent-color;
         color: $secondary-text-color;
+        border: 0px solid transparent;
         &:hover {
             background-color: $interactive-text-hover;
         }

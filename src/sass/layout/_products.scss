@@ -1,5 +1,7 @@
 
-.Products {
+.products {
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 60px;
     padding-bottom: 60px;
     background-image: url(../images/ice-cream-bgi.jpg), url(../images/ice-coffee-bgi.jpg), url(../images/milkshakes-bgi.jpg);
@@ -261,6 +263,7 @@
     align-items: center;
     width: 60px;
     height: 30px;
+    margin-top: auto;
     border: transparent;
     background-color: transparent;
 }
