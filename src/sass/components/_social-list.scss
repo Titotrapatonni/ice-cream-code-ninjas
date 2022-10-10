@@ -1,0 +1,23 @@
+.social-list {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 38px;
+}
+
+.social-list .social-list__item+.social-list__item {
+    margin-left: 27px;
+}
+
+.social-list__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    color: $primary-bgc-color;
+    background-color: $acent-color;
+
+    transform: scale(0.95);
+}

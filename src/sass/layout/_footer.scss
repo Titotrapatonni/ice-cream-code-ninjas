@@ -1,0 +1,52 @@
+.footer {
+    background-color: $primary-bgc-color;
+}
+
+.footer__title_wrapper {
+    max-width: 250px;
+    margin-bottom: 42px;
+}
+
+.footer__title-labl {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.22;
+    text-transform: uppercase;
+    color: $primary-text-color;
+}
+
+.footer__title {
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 1.20;
+    text-transform: uppercase;
+    color: $primary-text-color;
+}
+
+.social-list_wrapper {
+    margin-bottom: 40px;
+}
+
+.contact-tel__disc {
+    text-align: end;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.83;
+}
+
+.contact-tel {
+    color: $primary-text-color;
+}
+
+.copyright {
+    border-top: 1px solid #E1E1E1;
+    padding-top: 16px;
+    padding-right: 80px;
+    padding-bottom: 62px;
+    padding-left: 80px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.5;
+    color: $copyright-color;
+}
