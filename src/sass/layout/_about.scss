@@ -6,6 +6,7 @@
         text-transform: uppercase;
         color: $primary-text-color;
         padding-top: 60px;
+
     }
     &__title {
         font-family: $title-font;
@@ -30,7 +31,14 @@
     &__list {
         color: $primary-text-color;
     }
-    &__button {
+
+    &__item {
+        &:nth-child(1) {
+                margin-bottom: 4px;
+            }
+    }
+    .about__modal-button {
+
         width: 164px;
         height: 42px;
         border-radius: 10px;

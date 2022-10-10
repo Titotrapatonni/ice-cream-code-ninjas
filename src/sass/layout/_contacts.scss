@@ -52,7 +52,7 @@
         max-width: 224px;
         padding: 40px 24px;
         flex-basis: calc((100% - 32px) / 3);
-        
+
         &:not(:last-child) {
             margin-bottom: 0;
         }
@@ -85,7 +85,7 @@
     border-bottom: 1px solid #E1E1E1;
     margin-bottom: 24px;
     padding-bottom: 24px;
-    
+
 }
 @media screen and (min-width: 768px) {
     .list__address_item:not(:last-child) {
@@ -106,7 +106,7 @@
 }
 .list__address_time {
     color: $interactive-text-disabled;
-    
+
     &:not(:last-child) {
     margin-bottom: 8px;
 }
