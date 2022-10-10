@@ -22,6 +22,18 @@
         );
     }
 }
+@media screen and (min-width: 1200px) {
+    .section-contacts {
+        font-size: 16px;
+        padding-bottom: 120px;
+        background-image: linear-gradient(
+            to bottom,
+            transparent 96px,
+            #84A178 96px,
+            #84A178 538px
+        );
+    }
+}
 .contacts__list {
     margin-bottom: 32px;
 }
@@ -31,6 +43,12 @@
         flex-wrap: nowrap;
         gap: 16px;
         margin-bottom: 60px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .contacts__list {
+        gap: 32px;
+        margin-bottom: 64px;
     }
 }
 .contacts__item {
@@ -52,6 +70,17 @@
         max-width: 224px;
         padding: 40px 24px;
         flex-basis: calc((100% - 32px) / 3);
+
+        &:not(:last-child) {
+            margin-bottom: 0;
+        }
+    }
+}
+@media screen and (min-width: 1200px) {
+    .contacts__item {
+        max-width: 368px;
+        padding: 40px 40px;
+        flex-basis: calc((100% - 64px) / 3);
 
         &:not(:last-child) {
             margin-bottom: 0;
@@ -101,6 +130,11 @@
         margin-bottom: 12px;
     }
 }
+@media screen and (min-width: 1200px) {
+    .list__address_name {
+        margin-bottom: 8px;
+    }
+}
 .list__address_link {
     color: #D6936D;
 }
@@ -109,8 +143,14 @@
 
     &:not(:last-child) {
     margin-bottom: 8px;
+    }
 }
+@media screen and (min-width: 768px) {
+    .list__address_time:not(:last-child) {
+        margin-bottom: 12px;
+    }
 }
+
 .contacts__button {
     display: flex;
     row-gap: 16px;
@@ -126,21 +166,21 @@
 }
 .button {
     font-family: Montserrat, SemiBold;
+    font-size: 14px;
     font-weight: 600;
     display: flex;
-    max-width: 196px;
+    min-width: 196px;
     padding-top: 12px;
     padding-bottom: 12px;
     border-radius: 10px;
     border-color: transparent;
     align-items: center;
     align-self: center;
+    justify-content: center;
 
 }
 .contacts__button_yellow {
     background-color: $acent-color;
-    padding-left: 34px;
-    padding-right: 34px;
 }
 .contacts__button_yellow:hover {
     background-color: $interactive-text-hover;
@@ -155,8 +195,6 @@
     background-color: $interactive-text-disabled;
 }
 .contacts__button_green {
-    padding-left: 46px;
-    padding-right: 46px;
     border-color: $acent-color;
     background-color: transparent;
     border: 2px solid #F8D24E;
