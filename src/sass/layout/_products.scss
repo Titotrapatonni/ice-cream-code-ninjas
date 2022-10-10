@@ -4,6 +4,7 @@
     margin-right: auto;
     padding-top: 60px;
     padding-bottom: 60px;
+    width: 480px;
     background-image: url(../images/ice-cream-bgi.jpg), url(../images/ice-coffee-bgi.jpg), url(../images/milkshakes-bgi.jpg);
     background-size: contain;
     
@@ -11,6 +12,7 @@
     @media screen and (min-width: 768px) {
         background-image: url(../images/tablet-bgi.jpg);
         background-repeat: no-repeat;
+        background-size: cover;
         width: 768px;
     }
 
