@@ -1,10 +1,19 @@
 .footer {
     background-color: $primary-bgc-color;
+    &>.container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
 }
 
 .footer__title_wrapper {
     max-width: 250px;
     margin-bottom: 42px;
+    @media screen and (min-width: 768px) {
+        max-width: 350px;
+        margin-bottom: 32px;
+    }
 }
 
 .footer__title-labl {
@@ -13,6 +22,11 @@
     line-height: 1.22;
     text-transform: uppercase;
     color: $primary-text-color;
+
+    @media screen and (min-width: 768px) {
+        font-size: 26px;
+        line-height: 1.23;
+    }
 }
 
 .footer__title {
@@ -21,10 +35,18 @@
     line-height: 1.20;
     text-transform: uppercase;
     color: $primary-text-color;
+
+    @media screen and (min-width: 768px) {
+        font-size: 48px;
+        line-height: 1.23;
+    }
 }
 
 .social-list_wrapper {
     margin-bottom: 40px;
+    @media screen and (min-width: 768px) {
+        margin-bottom: 56px;
+    }
 }
 
 .contact-tel__disc {
@@ -32,6 +54,10 @@
     font-weight: 700;
     font-size: 12px;
     line-height: 1.83;
+    @media screen and (min-width: 768px) {
+        font-size: 14px;
+        line-height: 1.86;
+    }
 }
 
 .contact-tel {
@@ -49,4 +75,11 @@
     font-size: 14px;
     line-height: 1.5;
     color: $copyright-color;
+    @media screen and (min-width: 768px) {
+        padding-top: 14px;
+        padding-right: 0;
+        padding-bottom: 13px;
+        padding-left: 0;
+        line-height: 1.86;
+    }
 }
