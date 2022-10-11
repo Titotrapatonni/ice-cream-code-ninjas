@@ -157,6 +157,14 @@
         color: #FCFCFC;
 
         width: 151px;
+        padding-top: 10px;
+    }
+
+    .hero__ice-cream-about-text::after {
+        width: 40px;
+        content: url(../images/arrow.svg);
+        margin-top: 20px;
+        display: block;
     }
 
     .hero__menu-cafes {
@@ -262,6 +270,7 @@
     .hero__ice-cream-about-text {
         font-size: 14px;
         width: 200px;
+        margin-top: 40px;
     }
 
     .hero__menu-cafes {
