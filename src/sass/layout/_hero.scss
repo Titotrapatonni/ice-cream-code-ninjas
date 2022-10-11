@@ -39,28 +39,45 @@
     color: $secondary-text-color;
 
     display: flex;
+    align-items: center;
     gap: 8px;
 
     margin-bottom: 190px;
 }
 
 .hero__btn-border {
+    display: block;
+    text-align: center;
+    padding: 5px;
     width: 62px;
     height: 24px;
     background-color: transparent;
-    border: 2px solid #F8D24E;
+    border: 2px solid $acent-color;
     border-radius: 8px;
     color: $secondary-text-color;
 }
 
+.hero__btn-border:hover,
+.hero__btn-border:focus {
+    border: 2px solid $btn-interactive-color;
+}
+
 .hero__btn {
+    display: block;
+    text-align: center;
+    padding: 6px;
     width: 83px;
     height: 24px;
     background-color: transparent;
     border: none;
 
-    color: #F8D24E;
+    color: $acent-color;
     text-decoration-line: underline;
+}
+
+.hero__btn:hover,
+.hero__btn:focus {
+    color: $btn-interactive-color;
 }
 
 .hero__dots-img {
@@ -73,7 +90,7 @@
     left: 50%;
     transform: translateX(-55%);
     z-index: 10;
-
+    pointer-events: none;
 }
 
 
@@ -222,11 +239,13 @@
         width: 134px;
         height: 42px;
         border-radius: 10px;
+        padding: 10px;
     }
 
     .hero__btn {
         width: 154px;
         height: 40px;
+        padding: 10px;
     }
 
     .hero__ice-cream-about-img {
