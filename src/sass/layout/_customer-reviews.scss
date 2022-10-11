@@ -1,0 +1,35 @@
+.customer-reviews {
+    padding-top: 80.02px;
+    padding-bottom: 48.01px;
+}
+
+.customer-reviews__img {
+    border-radius: 50%;
+    margin-bottom: 32.01px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.customer-reviews__comment {
+    color: $primary-text-color;
+    background-color: #84A178;
+    border-radius: 10px;
+    padding: 34.01px 39px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 255%;
+    margin-bottom: 30.01px;
+    max-width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.customer-reviews__name {
+    color: $secondary-text-color;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 186%;
+    text-align: center;
+    margin-bottom: 14px;
+}
