@@ -2,6 +2,14 @@
     display: flex;
     justify-content: flex-end;
     margin-bottom: 38px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 32px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 40px;
+    }
 }
 
 .social-list .social-list__item+.social-list__item {
@@ -20,4 +28,24 @@
     background-color: $acent-color;
 
     transform: scale(0.95);
+
+    &:hover {
+        color: #ffffff;
+
+        @media screen and (min-width: 768px) {
+            transform: scale(0.95);
+        }
+    }
+
+    &:focus {
+        color: #ffffff;
+
+        @media screen and (min-width: 768px) {
+            transform: scale(1.05);
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        transform: scale(1);
+    }
 }
