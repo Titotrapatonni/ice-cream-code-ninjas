@@ -1,14 +1,14 @@
 .gallery {
     background-image: linear-gradient(
     to bottom,
-        #84A178 18.46%,
-        #F5F5F5 18.46%,
-        #F5F5F5 100%
+        $primary-bgc-color 18.46%,
+        $secondary-bgc-color 18.46%,
+        $secondary-bgc-color 100%
     );
         @media screen and (min-width: 768px) {
             background-image: linear-gradient(
             to bottom,
-                #84A178 50%,
+                $primary-bgc-color 50%,
                 transparent 50%,
                 transparent 100%
             );
@@ -16,9 +16,9 @@
         @media screen and (min-width: 1200px) {
             background-image: linear-gradient(
                 to bottom,
-                #84A178 22.27%,
-                #F5F5F5 22.27%,
-                #F5F5F5 23.22%,
+                $primary-bgc-color 22.27%,
+                $secondary-bgc-color 22.27%,
+                $secondary-bgc-color 23.22%,
                 transparent 23.22%,
                 transparent 100%
             );
