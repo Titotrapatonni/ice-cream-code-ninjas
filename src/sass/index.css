@@ -469,7 +469,7 @@ body {
   padding-top: 123px;
   padding-right: 40px;
   padding-left: 40px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   width: 280px;
   height: 420px;
   background-color: #AEC6A5;
@@ -487,6 +487,7 @@ body {
     padding-top: 108px;
     padding-left: 26px;
     padding-right: 26px;
+    padding-bottom: 0;
     width: 224px;
     height: 428px;
   }
@@ -496,7 +497,7 @@ body {
     padding-top: 166px;
     padding-left: 64px;
     padding-right: 64px;
-    padding-bottom: 60px;
+    padding-bottom: 40px;
     width: 370px;
     height: 535px;
   }
@@ -641,9 +642,15 @@ body {
   justify-content: center;
   align-items: center;
   width: 60px;
+  height: 20px;
   margin-top: auto;
   border: transparent;
   background-color: transparent;
+}
+@media screen and (min-width: 768px) {
+  .btn__arrow {
+    height: 40px;
+  }
 }
 
 .arrow__stem {
