@@ -57,15 +57,18 @@
         &:focus {
             background-color: $interactive-text-hover;
             color: $primary-text-color;
+            fill: $interactive-text-focus;
+            outline: none;
+        }
+        &:disabled {
+            background-color: $btn-disabled-color;
         }
     }
 }
 .about__svg {
     color: $secondary-text-color;
 }
-.about_arrow {
-    fill: currentColor;
-}
+
                             // //////////MOBILE//////////////////
 @media screen and (max-width: 767px) {
     .about {
