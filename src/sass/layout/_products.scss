@@ -11,12 +11,10 @@
         background-image: url(../images/tablet-bgi.jpg);
         background-repeat: no-repeat;
         background-size: cover;
-        width: 768px;
     }
 
     @media screen and (min-width: 1200px) {
         background-image: url(../images/desktop-bgi.jpg);
-        width: 1200px;
     }
 }
 
