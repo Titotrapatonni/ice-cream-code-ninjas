@@ -1,0 +1,69 @@
+<div class="mobile-menu">
+  <div class="container mobile-menu__container">
+    <button
+      class="mobile-menu__close-btn button data-menu-close"
+      type="button"
+      data-menu-close
+    >
+      <svg
+        aria-label="window menu close button"
+        class="mobile-menu__close-btn-icon"
+      >
+        <use href="./images/sprite.svg#icon-close"></use>
+      </svg>
+    </button>
+    <picture>
+      <source
+        srcset="
+          ./images/logo-tablet.webp    1x,
+          ./images/logo-tablet@2x.webp 2x
+        "
+        media="(min-width: 768px)"
+        type="image/webp"
+      />
+      <source
+        srcset="
+          ./images/logo-tablet.png    1x,
+          ./images/logo-tablet@2x.png 2x
+        "
+        media="(min-width: 768px)"
+      />
+      <source
+        srcset="
+          ./images/logo-mobile.webp    1x,
+          ./images/logo-mobile@2x.webp 2x
+        "
+        media="(max-width: 767px)"
+        type="image/webp"
+      />
+      <source
+        srcset="
+          ./images/logo-mobile.png    1x,
+          ./images/logo-mobile@2x.png 2x
+        "
+        media="(max-width: 767px)"
+      />
+      <img src="./images/logo-mobile.png" alt="logo" />
+    </picture>
+    <ul class="list mobile-menu__menu">
+      <li class="mobile-menu__list">
+        <a class="mobile-menu__link link" href="#">Home</a>
+      </li>
+      <li class="mobile-menu__list">
+        <a class="mobile-menu__link link" href="#">How it's made?</a>
+      </li>
+      <li class="mobile-menu__list">
+        <a class="mobile-menu__link link" href="#">Our products</a>
+      </li>
+      <li class="mobile-menu__list">
+        <a class="mobile-menu__link link" href="#">Contact</a>
+      </li>
+    </ul>
+    <button type="button" class="open-buy-now-button burger">
+      Buy now
+      <svg aria-label="buynow button" class="open-buy-now-button__icon">
+        <use href="./images/sprite.svg#icon-buynow-btn"></use>
+      </svg>
+    </button>
+  </div>
+</div>
