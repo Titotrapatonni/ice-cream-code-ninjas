@@ -1,125 +1,117 @@
-/* my styles */
-
-/* body {
-  margin: 0;
-}
-
-@media screen and (max-width:767px) {
-  .mobile-menu {
-    display: none;
-  }
-
-  .page-nav__list {
-    display: none;
-  }
-
-  .open-buy-now-button {
-    display: none;
-  }
-
-  .page-header__container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 12px;
-    background-color: rgb(132, 161, 120);
-  }
-
-  .open-mobile-menu-button {
-    padding: 0;
-    line-height: 0;
-    background-color: transparent;
-    border: none;
-  }
-
-  .open-mobile-menu-button__icon {
-    width: 32px;
-    height: 32px;
-    fill: #FCFCFC;
-  }
-} */
-
-/* Mobile menu */
-
-@media screen and (max-width:767px) {
-    .mobile-menu {
-        position: absolute;
-        width: 100%;
-        transform: translateX(101%);
-        background-color: rgb(132, 161, 120);
+@media screen and (min-width: 480px) {
+    .page-nav__list {
+        display: none;
     }
 
+    .open-buy-now-button {
+        display: none;
+    }
 
-    .mobile-menu__container {
-        position: relative;
-        height: 100%;
+    .page-header {
+        background-color: $primary-bgc-color;
+    }
+
+    .page-header__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         padding-top: 12px;
-        padding-bottom: 63px;
     }
 
-    .mobile-menu__close-btn {
-        position: absolute;
-        top: 16px;
-        right: 20px;
-        line-height: none;
+    .open-mobile-menu-button {
         padding: 0;
+        line-height: 0;
         background-color: transparent;
         border: none;
     }
 
-    .mobile-menu__close-btn-icon {
+    .open-mobile-menu-button__icon {
         width: 32px;
         height: 32px;
-        fill: #FCFCFC;
+        fill: $interactive-text-focus;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .page-header__container {
+        padding-top: 20px;
     }
 
-    .mobile-menu__menu {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 32px;
-        margin-top: 51px;
-        margin-bottom: 111px;
-    }
-
-    .mobile-menu__link {
-        font-weight: 700;
-        font-size: 32px;
-        line-height: 1.22;
-        color: #FCFCFC;
-    }
-
-    .mobile-menu__list:nth-child(2)>.mobile-menu__link {
-        color: #131313;
+    .open-mobile-menu-button {
+        margin-left: auto;
     }
 
     .open-buy-now-button {
-        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 152px;
         height: 42px;
-        background-color: #F8D24E;
+        background-color: $acent-color;
         border-radius: 10px;
         border-color: transparent;
         font-weight: 600;
         font-size: 14px;
         line-height: 1.21;
-        color: #131313;
-        margin-right: auto;
-        margin-left: auto;
+        color: $secondary-text-color;
+        margin-left: 32px;
+        transition: background-color $func-and-dur, color $func-and-dur;
+
+        &:hover {
+            background-color: $btn-interactive-color;
+        }
+
+        &:focus {
+            background-color: $btn-interactive-color;
+            color: $interactive-text-focus;
+        }
+
+        &:disabled {
+            background-color: $interactive-text-disabled;
+        }
     }
 
-    .open-buy-now-button:hover {
-        background-color: #0A8817;
+    .open-buy-now-button__icon {
+        width: 12px;
+        height: 12px;
+        margin-left: 7px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .open-mobile-menu-button {
+        display: none;
     }
 
-    .open-buy-now-button:focus {
-        background-color: #0A8817;
-        color: #FCFCFC;
+    .page-header__container {
+        padding-top: 8px;
     }
 
-    .open-buy-now-button:disabled {
-        background-color: #ABABAB;
-        ;
+    .page-nav {
+        display: flex;
     }
 
+    .page-nav__list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 27px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.25;
+        color: $primary-text-color;
+        margin-left: 269px;
+    }
+
+    .page-nav__link {
+        transition: color $func-and-dur;
+
+        &:hover {
+            color: $acent-color;
+        }
+    }
+
+    .open-buy-now-button {
+        margin: 0;
+    }
 }
