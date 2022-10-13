@@ -10,6 +10,8 @@
 .modal-buy {
   position: absolute;
   width: 280px;
+  height: 100%;
+    overflow-y: scroll;
   min-height: 300px;
   background: #fcfcfc;
   border: 2px solid #f8d24e;
@@ -86,28 +88,6 @@
   border-radius: 50%;
 }
 
-/* .input-field::after {
-    position: absolute;
-    top: 0;
-    transform: translateY(-70px);
-    width: 132px;
-    height: 132px;
-    content: "";
-
-}
-
-.input-field::after {
-    background-image: url(/images/pic-1.jpg);
-    width: 136px;
-    height: 132px;
-    top: 67px;
-    right: 175px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 50%;
-    z-index: 1;
-} */
-
 .input-field:nth-child(2)::before {
   position: absolute;
   transform: translateY(-44px);
@@ -127,28 +107,6 @@
   box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
   border-radius: 50%;
 }
-
-/* .input-field-2::after {
-    position: absolute;
-    top: 0;
-    transform: translateY(-70px);
-    width: 132px;
-    height: 132px;
-    content: "";
-
-}
-
-.input-field-2::after {
-    background-image: url(/images/pic-2.jpg);
-    width: 136px;
-    height: 132px;
-    top: 247px;
-    right: 175px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 50%;
-    z-index: 1;
-} */
 
 .input-field:nth-child(3)::before {
   position: absolute;
@@ -205,7 +163,10 @@
 
   color: #131313;
 }
-
+.form-input:not(:placeholder-shown):invalid {
+    border-color: red;
+    outline: none;
+}
 .form-input:not(:focus):not(:placeholder-shown):invalid {
   background-color: rgba(148, 86, 86, 0.322);
 }
@@ -243,7 +204,7 @@
   border-radius: 10px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .modal-buy {
     width: 568px;
   }
@@ -265,5 +226,3 @@
     width: 120px;
   }
 }
-
-// Franch ----------

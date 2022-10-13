@@ -17,10 +17,12 @@
         class="franchise-input"
         name="user-name"
         placeholder="Name"
+                pattern="[a-zA-Zа-яА-ЯІіЇї]+"
         required
       />
       <input
         type="tel"
+                pattern="[0-9]+"
         minlength="10"
         class="franchise-input"
         name="user-tel"
@@ -29,7 +31,8 @@
       />
       <input
         type="email"
-        minlength="10"
+        pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+        minlength="5"
         class="franchise-input"
         name="user-email"
         placeholder="Email"
