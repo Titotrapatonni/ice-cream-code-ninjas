@@ -1,0 +1,88 @@
+<div class="backdrop-buy">
+  <div class="modal__product">
+    <button class="modal__button__close"></button>
+    <h2 class="modal__title">Chololate icecream</h2>
+    <article class="img__modal">
+      <div class="img__bg">
+        <picture>
+          <img
+            class="img__ice-cream"
+            alt="ice-cream"
+            src="./images/modal-ice-cream.jpg"
+          />
+        </picture>
+      </div>
+    </article>
+    <ul class="modal__compound">
+      <li class="modal__compound__item">
+        <span class="modal__compound__weight">320</span
+        ><span class="modal__compound__nutrition">kcal</span>
+      </li>
+      <li class="modal__compound__item">
+        <span class="modal__compound__weight">4g</span
+        ><span class="modal__compound__nutrition">Prote...</span>
+      </li>
+      <li class="modal__compound__item">
+        <span class="modal__compound__weight">8,2g</span
+        ><span class="modal__compound__nutrition">Fats</span>
+      </li>
+      <li class="modal__compound__item">
+        <span class="modal__compound__weight">40,4g</span
+        ><span class="modal__compound__nutrition">Carbs</span>
+      </li>
+    </ul>
+    <p class="ingredients">Ingredients</p>
+    <ul class="ingredients__list">
+      <li class="ingredients__list__item">
+        <p class="ingredients__list__item__components">Milk</p>
+        <p class="ingredients__list__item__amount">100ml</p>
+      </li>
+      <li class="ingredients__list__item">
+        <p class="ingredients__list__item__components">Belgian chocolate</p>
+        <p class="ingredients__list__item__amount">20g</p>
+      </li>
+      <li class="ingredients__list__item">
+        <p class="ingredients__list__item__components">Cream</p>
+        <p class="ingredients__list__item__amount">150 ml</p>
+      </li>
+      <li class="ingredients__list__item">
+        <p class="ingredients__list__item__components">Cocoa powder</p>
+        <p class="ingredients__list__item__amount">30g</p>
+      </li>
+      <li class="ingredients__list__item">
+        <p class="ingredients__list__item__components">Sugar</p>
+        <p class="ingredients__list__item__amount">40g</p>
+      </li>
+      <li class="ingredients__list__item">
+        <p class="ingredients__list__item__components">Vanilla sugar</p>
+        <p class="ingredients__list__item__amount">10g</p>
+      </li>
+    </ul>
+    <form class="buy-form">
+      <input
+        type="text"
+        class="form-input"
+        name="user-name"
+        placeholder="Name"
+        required
+      />
+      <input
+        type="tel"
+        class="form-input"
+        name="user-tel"
+        minlength="10"
+        placeholder="Phone"
+        required
+      />
+      <div>
+        <textarea
+          name="user-comment"
+          id="user-comment"
+          class="modal-comment"
+          placeholder="Comment"
+        ></textarea>
+      </div>
+      <button type="submit" class="submit-btn-prod">Submit</button>
+    </form>
+  </div>
+</div>

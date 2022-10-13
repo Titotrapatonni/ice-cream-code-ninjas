@@ -1,0 +1,120 @@
+.modal-franchise {
+  position: absolute;
+  width: 280px;
+  min-height: 322px;
+  background-color: #fcfcfc;
+  border: 2px solid #f8d24e;
+  border-radius: 10px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 60px;
+}
+
+.modal-close {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+}
+
+.franchise-title {
+  font-family: 'Seymour One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+
+  text-align: center;
+  margin-bottom: 20px;
+  color: #131313;
+}
+
+.franchise-item {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  color: #131313;
+}
+
+.franchise-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.franchise-input {
+  width: 225px;
+  height: 32px;
+  background: rgba(248, 210, 78, 0.1);
+  border: 1px solid #84a178;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding: 0px 10px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 140%;
+  color: #131313;
+}
+
+/* .form-input:not(:focus):not(:placeholder-shown):valid {
+    background-color: rgba(67, 184, 67, 0.733);
+} */
+
+.franchise-input:not(:focus):not(:placeholder-shown):invalid {
+  background-color: rgba(148, 86, 86, 0.322);
+}
+
+.submit-btn-franchise {
+  width: 114px;
+  height: 42px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #131313;
+
+  border: transparent;
+  background: #f8d24e;
+  border-radius: 10px;
+}
+
+.modal-text {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.modal-comment-franchise {
+  width: 225px;
+  height: 65px;
+  background: rgba(248, 210, 78, 0.1);
+  border: 1px solid #84a178;
+  border-radius: 10px;
+  resize: none;
+  padding: 12px 10px;
+  margin-bottom: 25px;
+}
+
+@media screen and (min-width: 480px) {
+  .modal-franchise {
+    width: 568px;
+    min-height: 386px;
+  }
+
+  .franchise-input {
+    width: 370px;
+  }
+
+  .modal-comment-franchise {
+    width: 370px;
+  }
+
+  .submit-btn-franchise {
+    width: 120px;
+  }
+}

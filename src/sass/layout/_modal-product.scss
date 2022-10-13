@@ -1,0 +1,225 @@
+.modal__product {
+  margin-top: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 28px 20px 32px;
+  width: 280px;
+  min-height: 600px;
+  background: #fcfcfc;
+  border: 2px solid #f8d24e;
+  border-radius: 10px;
+}
+
+.modal__title {
+  margin-bottom: 22px;
+  font-family: 'Seymour One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.4;
+  text-align: center;
+  color: #131313;
+}
+
+.img__modal {
+  margin-bottom: 24px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 132px;
+  height: 138px;
+}
+
+.img__bg {
+  position: relative;
+  width: 132px;
+  height: 131px;
+  border-radius: 50%;
+  background: linear-gradient(
+      0deg,
+      rgba(156, 190, 143, 0.7),
+      rgba(156, 190, 143, 0.7)
+    ),
+    #d9d9d9;
+  box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+}
+
+.img__ice-cream {
+  position: absolute;
+  top: 0;
+  width: 131px;
+  height: 131px;
+  border-radius: 50%;
+  transform: translateY(-10px);
+}
+
+.modal__compound {
+  display: flex;
+  justify-content: center;
+  column-gap: 9px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 39px;
+  list-style: none;
+  padding: 0;
+}
+
+.modal__compound__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  width: 53px;
+  height: 72px;
+  border: 2px solid #9cbe8f;
+  border-radius: 40px;
+}
+
+.modal__compound__weight {
+  /* padding: 8px; */
+  width: 43px;
+  height: 43px;
+  margin-bottom: 8px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 2.8;
+  text-align: center;
+  color: #131313;
+  background: #9cbe8f;
+  border: 2px solid #9cbe8f;
+  border-radius: 50%;
+  box-shadow: 0px 6px 20px rgb(10 136 23 / 25%);
+}
+
+.modal__compound__nutrition {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.2;
+  text-align: center;
+  color: #131313;
+}
+
+.ingredients {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.4;
+  text-align: center;
+  color: #131313;
+}
+
+.ingredients__list {
+  margin-bottom: 24px;
+  list-style: none;
+  padding: 0;
+}
+
+.ingredients__list__item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ingredients__list__item__components {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.76;
+  letter-spacing: 0.04em;
+  color: #131313;
+}
+
+.ingredients__list__item__amount {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.76;
+  letter-spacing: 0.04em;
+  color: #131313;
+}
+
+.buy-form {
+  text-align: center;
+}
+
+.form-input {
+  width: 224px;
+  height: 33px;
+  margin-bottom: 12px;
+  padding-left: 12px;
+
+  border: 1px solid #84a178;
+  border-radius: 10px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 140%;
+
+  color: #131313;
+}
+
+.form-input:not(:focus):not(:placeholder-shown):invalid {
+  background-color: rgba(148, 86, 86, 0.322);
+}
+
+.modal-comment {
+  width: 218px;
+  height: 65px;
+  border: 1px solid #84a178;
+  border-radius: 10px;
+  resize: none;
+  padding: 12px 10px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 140%;
+
+  color: #131313;
+}
+
+.submit-btn-prod {
+  width: 114px;
+  height: 42px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  color: #131313;
+
+  margin-top: 32px;
+  border: transparent;
+  background: #f8d24e;
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 480px) {
+  .modal__product {
+    width: 568px;
+  }
+
+  .modal__compound {
+    gap: 20px;
+  }
+
+  .form-input {
+    width: 368px;
+  }
+
+  .modal-comment {
+    width: 363px;
+  }
+
+  .submit-btn-prod {
+    width: 120px;
+  }
+}

@@ -1,0 +1,268 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(185, 185, 185, 0.699);
+}
+
+.modal-buy {
+  position: absolute;
+  width: 280px;
+  min-height: 300px;
+  background: #fcfcfc;
+  border: 2px solid #f8d24e;
+  border-radius: 10px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 30px;
+}
+
+.modal-close {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+}
+
+.modal-title {
+  font-family: 'Seymour One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.modal-choise {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 25px;
+  margin-top: 55px;
+}
+
+.products-title {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 20px;
+  width: 130px;
+  height: 132px;
+  border: 2px solid #96af8c;
+  filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
+  border-radius: 15.7808px;
+}
+
+.input-field:nth-child(1)::before {
+  position: absolute;
+  transform: translateY(-44px);
+  width: 136px;
+  height: 132px;
+  content: '';
+  z-index: 1;
+}
+
+.input-field:nth-child(1)::before {
+  background: linear-gradient(
+      0deg,
+      rgba(156, 190, 143, 0.7),
+      rgba(156, 190, 143, 0.7)
+    ),
+    #d9d9d9;
+  box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
+  border-radius: 50%;
+}
+
+/* .input-field::after {
+    position: absolute;
+    top: 0;
+    transform: translateY(-70px);
+    width: 132px;
+    height: 132px;
+    content: "";
+
+}
+
+.input-field::after {
+    background-image: url(/images/pic-1.jpg);
+    width: 136px;
+    height: 132px;
+    top: 67px;
+    right: 175px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    z-index: 1;
+} */
+
+.input-field:nth-child(2)::before {
+  position: absolute;
+  transform: translateY(-44px);
+  width: 136px;
+  height: 132px;
+  content: '';
+  z-index: 1;
+}
+
+.input-field:nth-child(2)::before {
+  background: linear-gradient(
+      0deg,
+      rgba(248, 210, 78, 0.7),
+      rgba(248, 210, 78, 0.7)
+    ),
+    #d9d9d9;
+  box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
+  border-radius: 50%;
+}
+
+/* .input-field-2::after {
+    position: absolute;
+    top: 0;
+    transform: translateY(-70px);
+    width: 132px;
+    height: 132px;
+    content: "";
+
+}
+
+.input-field-2::after {
+    background-image: url(/images/pic-2.jpg);
+    width: 136px;
+    height: 132px;
+    top: 247px;
+    right: 175px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    z-index: 1;
+} */
+
+.input-field:nth-child(3)::before {
+  position: absolute;
+  transform: translateY(-44px);
+  width: 136px;
+  height: 132px;
+  content: '';
+  z-index: 1;
+}
+
+.input-field:nth-child(3)::before {
+  background: linear-gradient(
+      0deg,
+      rgba(213, 117, 63, 0.7),
+      rgba(213, 117, 63, 0.7)
+    ),
+    #d9d9d9;
+  box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+}
+
+.input-check:checked {
+  & + .check-ice h3 {
+    background-color: #aec6a5;
+  }
+
+  & + .check-cofee h3 {
+    background-color: #efd478;
+  }
+
+  & + .check-milk h3 {
+    background-color: #d6936d;
+  }
+}
+
+.buy-form {
+  text-align: center;
+}
+
+.form-input {
+  width: 224px;
+  height: 33px;
+  margin-bottom: 12px;
+  padding-left: 12px;
+
+  border: 1px solid #84a178;
+  border-radius: 10px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 140%;
+
+  color: #131313;
+}
+
+.form-input:not(:focus):not(:placeholder-shown):invalid {
+  background-color: rgba(148, 86, 86, 0.322);
+}
+
+.modal-comment {
+  width: 99%;
+  height: 65px;
+  border: 1px solid #84a178;
+  border-radius: 10px;
+  resize: none;
+  padding: 12px 10px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 140%;
+
+  color: #131313;
+}
+
+.submit-btn-buy {
+  width: 114px;
+  height: 42px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  color: #131313;
+
+  margin-top: 32px;
+  border: transparent;
+  background: #f8d24e;
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 480px) {
+  .modal-buy {
+    width: 568px;
+  }
+
+  .modal-choise {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .form-input {
+    width: 368px;
+  }
+
+  .modal-comment {
+    width: 363px;
+  }
+
+  .submit-btn-buy {
+    width: 120px;
+  }
+}
+
+// Franch ----------
