@@ -4,11 +4,12 @@
     background-repeat: no-repeat;
     background-size: 480px;
     background-position: bottom;
+    padding-top: 60px;
 }
 
 .position {
     position: relative;
-    height: 450px;
+    height: 390px;
 }
 
 .hero__title {
@@ -22,7 +23,6 @@
     color: #FCFCFC;
 
     max-width: 247px;
-    padding-top: 60px;
     margin-bottom: 32px;
 }
 
@@ -55,11 +55,20 @@
     border: 2px solid $acent-color;
     border-radius: 8px;
     color: $secondary-text-color;
-}
+    transition: $func-and-dur;
 
-.hero__btn-border:hover,
-.hero__btn-border:focus {
-    border: 2px solid $btn-interactive-color;
+    &:hover,
+    &:focus {
+        border: 2px solid $btn-interactive-color;
+    }
+
+    &:focus {
+        color: $primary-text-color;
+    }
+
+    &:disabled {
+        border: $btn-disabled-color;
+    }
 }
 
 .hero__btn {
@@ -70,14 +79,21 @@
     height: 24px;
     background-color: transparent;
     border: none;
-
     color: $acent-color;
     text-decoration-line: underline;
-}
+    transition: $func-and-dur;
 
-.hero__btn:hover,
-.hero__btn:focus {
-    color: $btn-interactive-color;
+    &:hover {
+        color: $btn-interactive-color;
+    }
+
+    &:focus {
+        color: $primary-text-color;
+    }
+
+    &:disabled {
+        color: $btn-disabled-color;
+    }
 }
 
 .hero__dots-img {
@@ -112,10 +128,11 @@
     .hero {
         background-image: url(../images/tablet-dots.svg);
         background-size: 768px;
+        padding-top: 40px;
     }
 
     .position {
-        height: 350px;
+        height: 310px;
     }
 
     .hero__title {
@@ -123,7 +140,6 @@
         line-height: 23px;
 
         max-width: 181px;
-        padding-top: 40px;
         margin-bottom: 20px;
     }
 
@@ -148,6 +164,20 @@
 
     .hero__ice-cream-about-img {
         width: 152px;
+        animation-name: spin;
+        animation-duration: 20s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes spin {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
     }
 
     .hero__ice-cream-about-text {
@@ -155,20 +185,25 @@
         font-size: 12px;
         line-height: 1.42;
         color: #FCFCFC;
-
         width: 151px;
         padding-top: 10px;
-    }
 
-    .hero__ice-cream-about-text::after {
-        width: 40px;
-        content: url(../images/arrow.svg);
-        margin-top: 20px;
-        display: block;
+        &::after {
+            width: 40px;
+            height: 12px;
+            content: url(../images/arrow.svg);
+            margin-top: 20px;
+            display: block;
+            transition: $func-and-dur;
+        }
+
+        &:hover::after {
+            width: 50px;
+        }
     }
 
     .hero__menu-cafes {
-        margin-top: 28px;
+        margin-top: -10px;
     }
 
     .hero__menu-cafes-number {
@@ -211,10 +246,11 @@
     .hero {
         background-image: url(../images/desktop-dots.svg);
         background-size: 1200px;
+        padding-top: 45px;
     }
 
     .position {
-        height: 590px; //
+        height: 545px;
     }
 
     .hero__title {
@@ -224,7 +260,6 @@
         letter-spacing: 0.04em;
 
         max-width: 367px;
-        padding-top: 45px;
         margin-bottom: 28px;
     }
 
@@ -274,7 +309,7 @@
     }
 
     .hero__menu-cafes {
-        margin-top: 56px;
+        margin-top: 9px;
     }
 
     .hero__menu-cafes-number {
@@ -293,6 +328,5 @@
 
     .hero__ice-cream-img {
         transform: translateX(-10%);
-        // height: 690px;
     }
 }
