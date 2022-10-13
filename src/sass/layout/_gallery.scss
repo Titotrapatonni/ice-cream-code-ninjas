@@ -1,14 +1,14 @@
 .gallery {
     background-image: linear-gradient(
     to bottom,
-        #84A178 18.46%,
-        #F5F5F5 18.46%,
-        #F5F5F5 100%
+        $primary-bgc-color 18.46%,
+        transparent 18.46%,
+        transparent 100%
     );
         @media screen and (min-width: 768px) {
             background-image: linear-gradient(
             to bottom,
-                #84A178 50%,
+                $primary-bgc-color 50%,
                 transparent 50%,
                 transparent 100%
             );
@@ -16,37 +16,77 @@
         @media screen and (min-width: 1200px) {
             background-image: linear-gradient(
                 to bottom,
-                #84A178 22.27%,
-                #F5F5F5 22.27%,
-                #F5F5F5 23.22%,
+                $primary-bgc-color 22.27%,
+                transparent 22.27%,
+                transparent 23.22%,
                 transparent 23.22%,
                 transparent 100%
             );
        }
 }
-
-.gallery__img-box {
+.gallery__container {
+    overflow: hidden;
+}
+.gallery__img-box{
+    position: relative;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
+    height: 100%;
+    
+
+        @media screen and (min-width: 480px) {
+            width: 279px;
+            height: 131px;
+        }
+        @media screen and (min-width: 768px) {
+            width: 704px;
+            height: 327px;
+        }
+        @media screen and (min-width: 1200px) {
+            width: 1013px;
+            height: 422px;
+        }
+}
+.gallery__img-animatio--tablet {
+    display: block;
+}
+.gallery__img-animatio {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    object-fit: cover;
     border-radius: 7.40681px;
     overflow: hidden;
+    transform: translateX( 279px );
+    animation: opaqTransition 18s ease-in-out infinite;
 
-    @media screen and (min-width: 480px) {
-        width: 279px;
-    }
-    @media screen and (min-width: 768px) {
-        width: 704px;
-        border-radius: 18px;
-    }
-    @media screen and (min-width: 1200px) {
-        width: 1013px;
-        border-radius: 24px;
-    }
-    
+        @media screen and (min-width: 768px) {
+            border-radius: 18px;
+            transform: translateX( 705px );
+        }
+        @media screen and (min-width: 1200px) {
+            border-radius: 24px;
+            transform: translateX( 1013px );
+        }
+}
+.gallery__img-animatio--img2 {
+    animation-delay: 6s;
+}
+.gallery__img-animatio--img3 {
+    animation-delay: 12s;
 }
 .gallery__img {
     display: block;
     width: 100%;
-    
+    height: 100%;
+}
+@keyframes opaqTransition {
+    3% { transform: translateX( 0 ); opacity: 1; }
+    33.3333% { transform: translateX( 0 ); opacity: 1; }
+    36.3333% { transform: translateX( -705px ); opacity: 0; }
+    100% { transform: translateX( -705px );opacity: 0; }
 }
