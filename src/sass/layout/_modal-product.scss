@@ -1,13 +1,26 @@
+.backdrop {
+  position: relative;
+}
+
 .modal__product {
-  margin-top: 200px;
-  margin-left: auto;
-  margin-right: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   padding: 28px 20px 32px;
   width: 280px;
+  height: 100%;
   min-height: 600px;
   background: #fcfcfc;
   border: 2px solid #f8d24e;
   border-radius: 10px;
+  overflow-y: scroll;
+
+  @media screen and (min-width: 768px) {
+    width: 568px;
+    height: 995px;
+    padding: 32px 40px;
+  }
 }
 
 .modal__title {
@@ -34,11 +47,9 @@
   width: 132px;
   height: 131px;
   border-radius: 50%;
-  background: linear-gradient(
-      0deg,
+  background: linear-gradient(0deg,
       rgba(156, 190, 143, 0.7),
-      rgba(156, 190, 143, 0.7)
-    ),
+      rgba(156, 190, 143, 0.7)),
     #d9d9d9;
   box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
 }
@@ -110,6 +121,13 @@
   line-height: 1.4;
   text-align: center;
   color: #131313;
+  margin-bottom: 48px;
+
+  @media screen and (min-width: 768px) {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.4;
+  }
 }
 
 .ingredients__list {
@@ -148,10 +166,11 @@
 }
 
 .form-input {
-  width: 224px;
-  height: 33px;
-  margin-bottom: 12px;
+  width: 240px;
+  height: 42px;
+  margin-bottom: 16px;
   padding-left: 12px;
+  background-color: rgba(248, 210, 78, 0.1);
 
   border: 1px solid #84a178;
   border-radius: 10px;
@@ -163,6 +182,10 @@
   line-height: 140%;
 
   color: #131313;
+
+  @media screen and (min-width: 768px) {
+    width: 368px;
+  }
 }
 
 .form-input:not(:focus):not(:placeholder-shown):invalid {
@@ -170,20 +193,26 @@
 }
 
 .modal-comment {
-  width: 218px;
-  height: 65px;
+  width: 240px;
+  height: 84px;
   border: 1px solid #84a178;
   border-radius: 10px;
   resize: none;
   padding: 12px 10px;
+  margin-bottom: 32px;
+  background-color: rgba(248, 210, 78, 0.1);
 
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
-  line-height: 140%;
+  line-height: 1.4;
 
   color: #131313;
+
+  @media screen and (min-width: 768px) {
+    width: 368px;
+  }
 }
 
 .submit-btn-prod {
@@ -196,13 +225,21 @@
   line-height: 15px;
   color: #131313;
 
-  margin-top: 32px;
+
   border: transparent;
   background: #f8d24e;
   border-radius: 10px;
+
+  @media screen and (min-width: 768px) {
+    width: 121px;
+  }
 }
 
-@media screen and (min-width: 480px) {
+.submit-btn-prod:disabled {
+  background-color: $interactive-text-disabled;
+}
+
+@media screen and (min-width: 768px) {
   .modal__product {
     width: 568px;
   }
@@ -222,4 +259,14 @@
   .submit-btn-prod {
     width: 120px;
   }
+}
+
+// Button-close
+
+.modal__button__close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: transparent;
+  border: transparent;
 }

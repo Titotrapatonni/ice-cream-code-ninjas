@@ -1,6 +1,15 @@
 <div class="backdrop is-hidden" data-modal-product>
   <div class="modal__product">
-    <button class="modal__button__close" data-modal-product-close></button>
+    <button class="modal__button__close" data-modal-product-close>
+      <svg
+        aria-label="modal close button"
+        class="modal-menu__close-btn-icon"
+        width="20"
+        height="20"
+      >
+        <use href="./images/sprite.svg#icon-close"></use>
+      </svg>
+    </button>
     <h2 class="modal__title">Chololate icecream</h2>
     <article class="img__modal">
       <div class="img__bg">
@@ -63,6 +72,7 @@
         type="text"
         class="form-input"
         name="user-name"
+        pattern="[a-zA-Z0-9]+"
         placeholder="Name"
         required
       />
@@ -70,6 +80,7 @@
         type="tel"
         class="form-input"
         name="user-tel"
+        pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
         minlength="10"
         placeholder="Phone"
         required
@@ -82,7 +93,9 @@
           placeholder="Comment"
         ></textarea>
       </div>
-      <button type="submit" class="submit-btn-prod">Submit</button>
+      <button type="submit" class="submit-btn-prod" [disabled]="!ngForm.valid">
+        Submit
+      </button>
     </form>
   </div>
 </div>
