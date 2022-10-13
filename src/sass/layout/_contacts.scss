@@ -1,13 +1,13 @@
 .section-contacts {
     font-weight: 500;
     font-size: 12px;
-    padding-top: 40px;
+    padding-top: 0;
     padding-bottom: 40px;
     color: $secondary-text-color;
     background-image: linear-gradient(
         to bottom,
-        transparent 346px,
-        #84A178 346px,
+        transparent 350px,
+        #84A178 350px,
         #84A178 412px
         );
 }
@@ -16,8 +16,8 @@
         font-size: 14px;
         background-image: linear-gradient(
             to bottom,
-            transparent 310px,
-            #84A178 310px,
+            transparent 312px,
+            #84A178 312px,
             #84A178 528px
         );
     }
@@ -92,7 +92,7 @@
     text-align: center;
     margin-bottom: 20px;
     background: $acent-color;
-    border-radius: 4px; 
+    border-radius: 6px; 
 
     &-width {
         max-width: 130px;
@@ -205,6 +205,8 @@
 .contacts__button_green:focus {
     color: $interactive-text-focus;
     fill: $interactive-text-focus;
+    border-color: $btn-interactive-color;
+    outline: none;
 }
 .contacts__button_green:disabled {
     background-color: $interactive-text-disabled;
