@@ -78,6 +78,7 @@
         }
 
         &:focus {
+            outline: none;
             background-color: $btn-interactive-color;
             color: $interactive-text-focus;
 
