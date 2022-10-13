@@ -91,13 +91,16 @@
 .contact-tel {
     color: $primary-text-color;
 }
-
-.copyright {
+.copyright_wrapper{
+    display: block;
     border-top: 1px solid #E1E1E1;
+}
+.copyright {
+    margin-right: auto;
+    margin-left: auto;
     padding-top: 16px;
-    padding-right: 80px;
     padding-bottom: 62px;
-    padding-left: 80px;
+    max-width: 160px;
     text-align: center;
     font-weight: 700;
     font-size: 14px;
@@ -105,10 +108,9 @@
     color: $copyright-color;
 
     @media screen and (min-width: 768px) {
+        max-width: 100%;
         padding-top: 14px;
-        padding-right: 0;
         padding-bottom: 13px;
-        padding-left: 0;
         line-height: 1.86;
     }
 
