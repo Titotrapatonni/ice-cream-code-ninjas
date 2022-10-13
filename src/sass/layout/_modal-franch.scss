@@ -61,10 +61,10 @@
   color: #131313;
 }
 
-/* .form-input:not(:focus):not(:placeholder-shown):valid {
-    background-color: rgba(67, 184, 67, 0.733);
-} */
-
+.franchise-input:not(:placeholder-shown):invalid {
+    border-color: red;
+    outline: none;
+}
 .franchise-input:not(:focus):not(:placeholder-shown):invalid {
   background-color: rgba(148, 86, 86, 0.322);
 }
@@ -100,7 +100,7 @@
   margin-bottom: 25px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .modal-franchise {
     width: 568px;
     min-height: 386px;

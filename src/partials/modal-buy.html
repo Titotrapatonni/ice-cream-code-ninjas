@@ -2,7 +2,7 @@
 
 <div class="backdrop is-hidden" data-modal-buy>
   <div class="modal-buy">
-    <button type="button" class="modal-close" data-modal-buy-close>X</button>
+    <button type="button" class="modal-close" data-modal-buy-close >X</button>
     <p class="modal-title">Buy now</p>
     <div class="modal-choise">
       <div class="input-field">
@@ -49,6 +49,7 @@
         name="user-name"
         placeholder="Name"
         required
+        pattern="[a-zA-Zа-яА-ЯІіЇї]+"
       />
       <input
         type="tel"
@@ -57,6 +58,7 @@
         minlength="10"
         placeholder="Phone"
         required
+        pattern="[0-9]+"
       />
       <div>
         <textarea
