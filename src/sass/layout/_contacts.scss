@@ -164,6 +164,15 @@
         align-items: center;
     }
 }
+.contacts__button_list {
+    margin-left: auto;
+    margin-right: auto;
+}
+@media screen and (min-width: 768px) {
+    .contacts__button_list {
+        margin: 0;
+    }
+}
 .button {
     font-family: Montserrat, SemiBold;
     font-size: 14px;
