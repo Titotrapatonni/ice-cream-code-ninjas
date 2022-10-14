@@ -34,7 +34,7 @@ p {
   border: 1px solid transparent;
   border-radius: 50px;
   background-color: transparent;
-  @media screen and (mon-width:768px) {
+  @media screen and (min-width:768px) {
     right: 24px;
   top: 24px;
   }
@@ -44,8 +44,6 @@ p {
   font-family: 'Seymour One';
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 28px;
   color: #131313;
   text-align: center;
 
@@ -66,6 +64,10 @@ p {
 .video-title {
   padding-left: 28px;
   padding-right: 28px;
+}
+.video__description {
+line-height: 1.4;
+letter-spacing: normal;
 }
 
 @media screen and (min-width: 768px) {
