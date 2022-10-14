@@ -1,8 +1,9 @@
 .modal-franchise {
   position: absolute;
   width: 280px;
-  min-height: 322px;
-  background-color: #fcfcfc;
+height: 100%;  
+background-color: #fcfcfc;
+overflow-y: scroll;
   border: 2px solid #f8d24e;
   border-radius: 10px;
   top: 50%;

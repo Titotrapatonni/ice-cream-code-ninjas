@@ -13,6 +13,8 @@ p {
 .modal-made {
   position: absolute;
   width: 280px;
+  height: 100%;
+  overflow-y: scroll;
   min-height: 380px;
   background-color: #fcfcfc;
   border: 2px solid #f8d24e;
