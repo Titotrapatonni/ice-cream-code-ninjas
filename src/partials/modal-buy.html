@@ -10,45 +10,202 @@
       >
         <use href="./images/sprite.svg#icon-close"></use>
       </svg></button>
-    <p class="modal-title">Buy now</p>
-    <div class="modal-choise">
-      <div class="input-field">
+      <p class="modal-title">Buy now</p>
+      <form class="modal-form__buy-now">
+      <p class="modal-form__title title"></p>
+      <div class="modal-form__thumb">
         <input
+          class="modal-form__check modal-form__check--green visually-hidden"
           type="checkbox"
-          name="choice"
-          value="true"
-          class="input-check visually-hidden"
-          id="choice"
+          name="ice-cream"
+          id="icecream-green"
         />
-        <label for="choice" class="check-ice"
-          ><h3 class="products-title">ice cream</h3></label
+        <label
+          class="modal-form__check-field modal-form__check-field--green"
+          for="icecream-green"
+        >
+          <span class="modal-form__wrapper modal-form__wrapper--green">
+            <picture>
+              <source
+                srcset="
+                  ./images/buy-now_icecream-desktop.webp    1x,
+                  ./images/buy-now_icecream-desktop@2x.webp 2x
+                "
+                media="(min-width: 768px)"
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  ./images/buy-now_icecream-desktop.png    1x,
+                  ./images/buy-now_icecream-desktop@2x.png 2x
+                "
+                media="(min-width: 768px)"
+                type="image/png"
+              />
+              <source
+                srcset="
+                  ./images/buy-now_icecream-mobile.webp    1x,
+                  ./images/buy-now_icecream-mobile@2x.webp 2x
+                "
+                media="(max-width: 767px)"
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  ./images/buy-now_icecream-mobile.png    1x,
+                  ./images/buy-now_icecream-mobile@2x.png 2x
+                "
+                media="(max-width: 767px)"
+                type="image/png"
+              />
+              <img
+                src="./images/buy-now_icecream-mobile.png"
+                alt="icecream"
+                class="modal-form__img"
+              />
+            </picture>
+          </span>
+          <span class="modal-form__check-field--text">ice cream</span></label
+        >
+        <input
+          class="modal-form__check visually-hidden modal-form__check--yellow"
+          type="checkbox"
+          name="coffee"
+          id="icecoffee-yellow"
+        />
+        <label
+          class="modal-form__check-field modal-form__check-field--yellow"
+          for="icecoffee-yellow"
+        >
+          <span class="modal-form__wrapper modal-form__wrapper--yellow">
+            <picture>
+              <source
+                srcset="
+                  ./images/buy-now_icecoffee-desktop.webp    1x,
+                  ./images/buy-now_icecoffee-desktop@2x.webp 2x
+                "
+                media="(min-width: 768px)"
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  ./images/buy-now_icecoffee-desktop.png    1x,
+                  ./images/buy-now_icecoffee-desktop@2x.png 2x
+                "
+                media="(min-width: 768px)"
+                type="image/png"
+              />
+              <source
+                srcset="
+                  ./images/buy-now_icecoffee-mobile.webp    1x,
+                  ./images/buy-now_icecoffee-mobile@2x.webp 2x
+                "
+                media="(max-width: 767px)"
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  ./images/buy-now_icecoffee-mobile.png    1x,
+                  ./images/buy-now_icecoffee-mobile@2x.png 2x
+                "
+                media="(max-width: 767px)"
+                type="image/png"
+              />
+              <img
+                src="./images/buy-now_icecoffee-mobile.png"
+                alt="icecream"
+                class="modal-form__img"
+              />
+            </picture>
+          </span>
+          <span class="modal-form__check-field--text">ice coffee</span></label
+        >
+        <input
+          class="modal-form__check visually-hidden modal-form__check--brown"
+          type="checkbox"
+          name="milkshake"
+          id="milkshake-brown"
+        />
+        <label
+          class="modal-form__check-field modal-form__check-field--brown"
+          for="milkshake-brown"
+        >
+          <span class="modal-form__wrapper modal-form__wrapper--brown">
+            <picture>
+              <source
+                srcset="
+                  ./images/buy-now_milkshake-desktop.webp    1x,
+                  ./images/buy-now_milkshake-desktop@2x.webp 2x
+                "
+                media="(min-width: 768px)"
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  ./images/buy-now_milkshake-desktop.png    1x,
+                  ./images/buy-now_milkshake-desktop@2x.png 2x
+                "
+                media="(min-width: 768px)"
+                type="image/png"
+              />
+              <source
+                srcset="
+                  ./images/buy-now_milkshake-mobile.webp    1x,
+                  ./images/buy-now_milkshake-mobile@2x.webp 2x
+                "
+                media="(max-width: 767px)"
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  ./images/buy-now_milkshake-mobile.png    1x,
+                  ./images/buy-now_milkshake-mobile@2x.png 2x
+                "
+                media="(max-width: 767px)"
+                type="image/png"
+              />
+              <img
+                src="./images/buy-now_milkshake-mobile.png"
+                alt="icecream"
+                class="modal-form__img"
+              />
+            </picture>
+          </span>
+          <span class="modal-form__check-field--text">milkshake</span></label
         >
       </div>
-      <div class="input-field">
-        <input
-          type="checkbox"
-          name="choice-2"
-          value="true"
-          class="input-check visually-hidden"
-          id="choice-2"
-        />
-        <label for="choice-2" class="check-cofee"
-          ><h3 class="products-title">ice coffee</h3></label
-        >
-      </div>
-      <div class="input-field">
-        <input
-          type="checkbox"
-          name="choice-3"
-          value="true"
-          class="input-check visually-hidden"
-          id="choice-3"
-        />
-        <label for="choice-3" class="check-milk"
-          ><h3 class="products-title">milkshake</h3></label
-        >
-      </div>
-    </div>
+      <!-- <div class="modal-form__data-thumb">
+        <label>
+          <input
+            type="text"
+            class="modal-form__input"
+            name="user_name"
+            placeholder="Name"
+            pattern="[a-zA-Zа-яА-яІіЇї]+"
+            required
+            minlength="4"
+          />
+        </label>
+        <label>
+          <input
+            type="tel"
+            class="modal-form__input"
+            name="user_phone"
+            placeholder="Phone"
+            pattern="[0-9]+"
+            required
+          />
+        </label>
+        <label>
+          <textarea
+            class="modal-form__messadge"
+            name="user_comment"
+            placeholder="Comment"
+          ></textarea>
+        </label>
+      </div> -->
+      <button class="modal-form__send-btn" type="submit">Submit</button>
+    </form>
     <form class="buy-form">
       <input
         type="text"
