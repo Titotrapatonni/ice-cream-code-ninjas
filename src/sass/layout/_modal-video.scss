@@ -21,7 +21,8 @@ p {
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 28px;
-  // overflow-y: scroll;
+  height: 100%;
+    overflow-y: scroll;
 
   @media screen and (min-width: 768px) {
     width: 568px;
@@ -32,7 +33,7 @@ p {
 
 .modal-close-video {
   position: absolute;
-  right: 8px;
+  right: 16px;
   top: 8px;
   width: 16px;
   height: 16px;
