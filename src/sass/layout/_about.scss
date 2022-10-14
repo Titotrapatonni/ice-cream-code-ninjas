@@ -51,6 +51,7 @@
         background-color: $acent-color;
         color: $secondary-text-color;
         border: 0px solid transparent;
+        transition: color $func-and-dur, background-color $func-and-dur, fill $func-and-dur;
         &:hover {
             background-color: $interactive-text-hover;
         }

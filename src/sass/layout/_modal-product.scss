@@ -120,12 +120,14 @@
   line-height: 1.4;
   text-align: center;
   color: #131313;
-  margin-bottom: 48px;
+  margin-bottom: 24px;
 
   @media screen and (min-width: 768px) {
-    font-weight: 400;
+    font-weight: 500;
     font-size: 14px;
     line-height: 1.4;
+      margin-bottom: 48px;
+
   }
 }
 

@@ -194,6 +194,8 @@
 }
 .contacts__button_yellow {
     background-color: $acent-color;
+            transition: color $func-and-dur, background-color $func-and-dur, fill $func-and-dur;
+
 }
 .contacts__button_yellow:hover {
     background-color: $interactive-text-hover;
@@ -211,6 +213,8 @@
     border-color: $acent-color;
     background-color: transparent;
     border: 2px solid #F8D24E;
+            transition: color $func-and-dur, background-color $func-and-dur, fill $func-and-dur, border-color $func-and-dur;
+
 }
 .contacts__button_green:hover {
     border-color: $interactive-text-hover;

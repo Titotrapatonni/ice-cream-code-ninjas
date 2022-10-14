@@ -28,6 +28,8 @@
     background-color: $acent-color;
 
     transform: scale(0.95);
+                transition: color $func-and-dur, background-color $func-and-dur, fill $func-and-dur, border-color $func-and-dur, transform $func-and-dur;
+
 
     &:hover {
         color: #ffffff;
