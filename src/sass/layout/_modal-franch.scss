@@ -9,6 +9,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+
   padding: 28px;
   overflow-y: scroll;
 
@@ -16,6 +17,7 @@
     padding: 60px;
     width: 568px;
     min-height: 386px;
+
   }
 }
 
@@ -58,11 +60,13 @@
   font-size: 14px;
   line-height: 140%;
   color: #131313;
+
   margin-bottom: 25px;
 
   @media screen and (min-width: 768px) {
     font-size: 16px;
     margin-bottom: 30px;
+
   }
 }
 
