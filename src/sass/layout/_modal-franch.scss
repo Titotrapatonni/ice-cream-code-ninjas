@@ -1,26 +1,45 @@
 .modal-franchise {
   position: absolute;
   width: 280px;
-height: 100%;  
-background-color: #fcfcfc;
-overflow-y: scroll;
+  height: 100%;
+  min-height: 322px;
+  background-color: #fcfcfc;
   border: 2px solid #f8d24e;
   border-radius: 10px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-    padding: 29px;
+
+  padding: 28px;
+  overflow-y: scroll;
 
   @media screen and (min-width: 768px) {
-
     padding: 60px;
+    width: 568px;
+    min-height: 386px;
+
   }
 }
 
-.modal-close {
+  .modal-menu__close-btn-icon {
+    
+    width: 16px;
+    height: 16px;
+    @media screen and (min-width: 768px) {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+.modal-close-franchise {
   position: absolute;
-  right: 8px;
+  right: 16px;
   top: 8px;
+  width: 16px;
+  height: 16px;
+  border: 1px solid transparent;
+  border-radius: 50px;
+  background-color: transparent;
 }
 
 .franchise-title {
@@ -37,14 +56,17 @@ overflow-y: scroll;
 
 .franchise-item {
   font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 140%;
   color: #131313;
-  margin-bottom: 24px;
+
+  margin-bottom: 25px;
+
   @media screen and (min-width: 768px) {
-    margin-bottom: 32px;
+    font-size: 16px;
+    margin-bottom: 30px;
+
   }
 }
 
@@ -69,11 +91,14 @@ overflow-y: scroll;
   font-size: 12px;
   line-height: 140%;
   color: #131313;
+  @media screen and (min-width: 768px) {
+    width: 370px;
+  }
 }
 
 .franchise-input:not(:placeholder-shown):invalid {
-    border-color: red;
-    outline: none;
+  border-color: red;
+  outline: none;
 }
 .franchise-input:not(:focus):not(:placeholder-shown):invalid {
   background-color: rgba(148, 86, 86, 0.322);
@@ -92,6 +117,9 @@ overflow-y: scroll;
   border: transparent;
   background: #f8d24e;
   border-radius: 10px;
+  @media screen and (min-width: 768px) {
+    width: 120px;
+  }
 }
 
 .modal-text {
@@ -108,23 +136,7 @@ overflow-y: scroll;
   resize: none;
   padding: 12px 10px;
   margin-bottom: 25px;
-}
-
-@media screen and (min-width: 768px) {
-  .modal-franchise {
-    width: 568px;
-    min-height: 386px;
-  }
-
-  .franchise-input {
+  @media screen and (min-width: 768px) {
     width: 370px;
-  }
-
-  .modal-comment-franchise {
-    width: 370px;
-  }
-
-  .submit-btn-franchise {
-    width: 120px;
   }
 }
