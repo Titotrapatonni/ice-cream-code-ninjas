@@ -40,10 +40,8 @@
 .modal-map {
   width: 225px;
   height: 200px;
-  /* padding-left: 28px;
-    padding-right: 28px; */
   border-radius: 10px;
-  margin-bottom: 32px;
+  margin-bottom: 24px;
 }
 
 .modal-button {
@@ -63,21 +61,25 @@
   padding: 12px 34px;
   text-decoration: none;
   text-align: center;
-  font-size: 14px;
-  line-height: 1.214;
   letter-spacing: 0.075px;
-  padding: 12px 34px;
 }
 
-@media screen and (min-width: 767px) {
+
+@media screen and (min-width: 768px) {
+
   .modal-locate {
     width: 568px;
     min-height: 370px;
-    padding: 32px 60px;
+    padding: 30px 60px;
   }
 
   .modal-map {
     width: 448px;
     height: 260px;
+    margin-bottom: 32px;
+  }
+  .modal-button--location {
+    font-size: 14px;
+    line-height: 1.214;
   }
 }
