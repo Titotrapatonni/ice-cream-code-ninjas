@@ -18,11 +18,17 @@
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 28px;
+
+  @media screen and (min-width: 480px) {
+    width: 568px;
+    min-height: 370px;
+    padding: 32px 60px;
+  }
 }
 
-.modal-close {
+.modal-close-location {
   position: absolute;
-  right: 8px;
+  right: 16px;
   top: 8px;
   width: 16px;
   height: 16px;
@@ -44,6 +50,11 @@
     padding-right: 28px; */
   border-radius: 10px;
   margin-bottom: 32px;
+
+  @media screen and (min-width: 480px) {
+    width: 448px;
+    height: 260px;
+  }
 }
 
 .modal-button {

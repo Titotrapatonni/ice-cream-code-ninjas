@@ -8,7 +8,13 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 60px;
+  padding: 28px;
+
+  @media screen and (min-width: 768px) {
+    padding: 60px;
+    width: 568px;
+    min-height: 386px;
+  }
 }
 
 .modal-close {
@@ -31,11 +37,16 @@
 
 .franchise-item {
   font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 140%;
   color: #131313;
+  margin-bottom: 25px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
 }
 
 .franchise-form {
@@ -59,11 +70,14 @@
   font-size: 12px;
   line-height: 140%;
   color: #131313;
+  @media screen and (min-width: 768px) {
+    width: 370px;
+  }
 }
 
 .franchise-input:not(:placeholder-shown):invalid {
-    border-color: red;
-    outline: none;
+  border-color: red;
+  outline: none;
 }
 .franchise-input:not(:focus):not(:placeholder-shown):invalid {
   background-color: rgba(148, 86, 86, 0.322);
@@ -82,6 +96,9 @@
   border: transparent;
   background: #f8d24e;
   border-radius: 10px;
+  @media screen and (min-width: 768px) {
+    width: 120px;
+  }
 }
 
 .modal-text {
@@ -98,23 +115,7 @@
   resize: none;
   padding: 12px 10px;
   margin-bottom: 25px;
-}
-
-@media screen and (min-width: 768px) {
-  .modal-franchise {
-    width: 568px;
-    min-height: 386px;
-  }
-
-  .franchise-input {
+  @media screen and (min-width: 768px) {
     width: 370px;
-  }
-
-  .modal-comment-franchise {
-    width: 370px;
-  }
-
-  .submit-btn-franchise {
-    width: 120px;
   }
 }
