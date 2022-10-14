@@ -9,7 +9,12 @@ overflow-y: scroll;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 60px;
+    padding: 29px;
+
+  @media screen and (min-width: 768px) {
+
+    padding: 60px;
+  }
 }
 
 .modal-close {
@@ -37,6 +42,10 @@ overflow-y: scroll;
   font-size: 14px;
   line-height: 140%;
   color: #131313;
+  margin-bottom: 24px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 32px;
+  }
 }
 
 .franchise-form {
