@@ -1,70 +1,72 @@
 <!-- Buy Modal -->
 
-<div class="backdrop is-hidden" data-modal-buy>
+<div class="backdrop" data-modal-buy>
   <div class="modal-buy">
-    <button type="button" class="modal-close" data-modal-buy-close>X</button>
+    <button type="button" class="modal-close-btn" data-modal-buy-close>
+      X
+    </button>
     <p class="modal-title">Buy now</p>
     <div class="modal-choise">
       <div class="input-field">
-        <input
-          type="checkbox"
-          name="choice"
-          value="true"
-          class="input-check visually-hidden"
-          id="choice"
-        />
-        <label for="choice" class="check-ice"
-          ><h3 class="products-title">ice cream</h3></label
-        >
-      </div>
-      <div class="input-field">
-        <input
-          type="checkbox"
-          name="choice-2"
-          value="true"
-          class="input-check visually-hidden"
-          id="choice-2"
-        />
-        <label for="choice-2" class="check-cofee"
-          ><h3 class="products-title">ice coffee</h3></label
-        >
-      </div>
-      <div class="input-field">
-        <input
-          type="checkbox"
-          name="choice-3"
-          value="true"
-          class="input-check visually-hidden"
-          id="choice-3"
-        />
-        <label for="choice-3" class="check-milk"
-          ><h3 class="products-title">milkshake</h3></label
-        >
+        <ul class="modal-buy__menu list">
+          <li class="modal-buy__menu-item">
+            <input
+              type="checkbox"
+              name="choice-ice"
+              class="input-check visually-hidden"
+              value="true"
+              id="choice-ice"
+            />
+            <label for="choice-ice" class="check-ice">
+              <span class="v-buy__menu-text">ice cream</span>
+            </label>
+          </li>
+          <li class="modal-buy__menu-item">
+            <input
+              type="checkbox"
+              name="choice-cofee"
+              class="input-check visually-hidden"
+              id="choice-coffee"
+            />
+            <label for="choice-coffee" class="check-coffee">
+              <span class="q-buy__menu-text">ice coffee</span>
+            </label>
+          </li>
+          <li class="modal-buy__menu-item">
+            <input
+              type="checkbox"
+              name="choice"
+              class="input-check visually-hidden"
+              id="choice-milk"
+            />
+            <label for="choice-milk" class="check-milk">
+              <span class="c-buy__menu-text t">milkshake</span>
+            </label>
+          </li>
+        </ul>
       </div>
     </div>
     <form class="buy-form">
       <input
         type="text"
-        class="form-input"
+        class="buy-form__form-input"
         name="user-name"
         placeholder="Name"
         required
-        pattern="[a-zA-Zа-яА-ЯІіЇї]+"
       />
       <input
         type="tel"
-        class="form-input"
+        class="buy-form__form-input"
         name="user-tel"
         minlength="10"
         placeholder="Phone"
         required
-        pattern="[0-9]+"
       />
       <div>
         <textarea
           name="user-comment"
           id="user-comment"
-          class="modal-comment"
+          class="buy-form__modal-comment"
           placeholder="Comment"
         ></textarea>
       </div>

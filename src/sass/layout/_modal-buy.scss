@@ -5,13 +5,12 @@
   width: 100%;
   height: 100%;
   background-color: rgba(185, 185, 185, 0.699);
+  overflow-y: scroll;
 }
 
 .modal-buy {
   position: absolute;
-  width: 280px;
-  height: 100%;
-    overflow-y: scroll;
+  // width: 280px;
   min-height: 300px;
   background: #fcfcfc;
   border: 2px solid #f8d24e;
@@ -22,10 +21,13 @@
   padding: 30px;
 }
 
-.modal-close {
+.modal-close-btn {
+  //змінив клас
   position: absolute;
   right: 8px;
   top: 8px;
+  background: transparent;
+  border: none;
 }
 
 .modal-title {
@@ -45,7 +47,7 @@
   align-items: center;
   gap: 40px;
   margin-bottom: 25px;
-  margin-top: 55px;
+  margin-top: 80px;
 }
 
 .products-title {
@@ -68,16 +70,107 @@
   border-radius: 15.7808px;
 }
 
-.input-field:nth-child(1)::before {
-  position: absolute;
-  transform: translateY(-44px);
-  width: 136px;
-  height: 132px;
-  content: '';
-  z-index: 1;
+.modal-buy__menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 84px;
+
+  @media screen and(min-width:768px) {
+    flex-direction: row;
+    gap: 30px;
+  }
 }
 
-.input-field:nth-child(1)::before {
+.v-buy__menu-text {
+  display: block;
+  width: 132px;
+  height: 136px;
+  border: 2px solid #aec6a5;
+  border-radius: 16px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 96px;
+  pointer-events: none;
+  background-color: transparent;
+}
+
+.q-buy__menu-text {
+  display: block;
+  width: 132px;
+  height: 136px;
+  border: 2px solid #efd478;
+  border-radius: 16px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 96px;
+  pointer-events: none;
+  background-color: transparent;
+}
+
+.c-buy__menu-text {
+  display: block;
+  width: 132px;
+  height: 136px;
+  border: 2px solid #d6936d;
+  border-radius: 16px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 96px;
+  pointer-events: none;
+  background-color: transparent;
+}
+
+.input-check:checked {
+  & + .check-ice span {
+    background-color: #aec6a5;
+  }
+
+  & + .check-coffee span {
+    background-color: #efd478;
+  }
+
+  & + .check-milk span {
+    background-color: #d6936d;
+  }
+}
+
+.modal-buy__menu-item {
+  position: relative;
+  // border: 2px solid #96af8c;
+  // border-radius: 16px;
+
+  // &:nth-child(2) {
+  //   border: 2px solid #efd478;
+  // }
+
+  // &:nth-child(3) {
+  //   border: 2px solid #d6936d;
+  // }
+}
+
+.check-ice::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(-60px);
+  width: 132px;
+  height: 132px;
+  content: '';
+
   background: linear-gradient(
       0deg,
       rgba(156, 190, 143, 0.7),
@@ -88,69 +181,92 @@
   border-radius: 50%;
 }
 
-.input-field:nth-child(2)::before {
+.check-coffee::before {
   position: absolute;
-  transform: translateY(-44px);
-  width: 136px;
+  top: 0;
+  left: 0;
+  transform: translateY(-60px);
+  width: 132px;
   height: 132px;
   content: '';
-  z-index: 1;
-}
-
-.input-field:nth-child(2)::before {
   background: linear-gradient(
       0deg,
       rgba(248, 210, 78, 0.7),
       rgba(248, 210, 78, 0.7)
     ),
     #d9d9d9;
-  box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
+  box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
   border-radius: 50%;
 }
 
-.input-field:nth-child(3)::before {
+.check-milk::before {
   position: absolute;
-  transform: translateY(-44px);
-  width: 136px;
+  top: 0;
+  left: 0;
+  transform: translateY(-60px);
+  width: 132px;
   height: 132px;
   content: '';
-  z-index: 1;
-}
-
-.input-field:nth-child(3)::before {
   background: linear-gradient(
       0deg,
       rgba(213, 117, 63, 0.7),
       rgba(213, 117, 63, 0.7)
     ),
     #d9d9d9;
-  box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.25);
   border-radius: 50%;
 }
 
-.input-check:checked {
-  & + .check-ice h3 {
-    background-color: #aec6a5;
-  }
+.check-ice::after {
+  position: absolute;
+  top: 0;
+  transform: translateY(-68px);
+  width: 132px;
+  height: 132px;
+  content: '';
 
-  & + .check-cofee h3 {
-    background-color: #efd478;
-  }
+  background-image: url(../images/ice-cream@2x.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+}
 
-  & + .check-milk h3 {
-    background-color: #d6936d;
-  }
+.check-coffee::after {
+  position: absolute;
+  top: 0;
+  transform: translateY(-68px);
+  width: 132px;
+  height: 132px;
+  content: '';
+  background-image: url(../images/ice-coffee@2x.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.check-milk::after {
+  position: absolute;
+  top: 0;
+  transform: translateY(-68px);
+  width: 132px;
+  height: 132px;
+  content: '';
+  background-image: url(../images/milkshakes@2x.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
 }
 
 .buy-form {
   text-align: center;
 }
 
-.form-input {
+.buy-form__form-input {
   width: 224px;
   height: 33px;
   margin-bottom: 12px;
   padding-left: 12px;
+  background-color: rgba(248, 210, 78, 0.1);
 
   border: 1px solid #84a178;
   border-radius: 10px;
@@ -163,21 +279,20 @@
 
   color: #131313;
 }
-.form-input:not(:placeholder-shown):invalid {
-    border-color: red;
-    outline: none;
-}
-.form-input:not(:focus):not(:placeholder-shown):invalid {
+
+.buy-form__form-input:not(:focus):not(:placeholder-shown):invalid {
   background-color: rgba(148, 86, 86, 0.322);
 }
 
-.modal-comment {
-  width: 99%;
+.buy-form__modal-comment {
+  width: 224px;
   height: 65px;
   border: 1px solid #84a178;
   border-radius: 10px;
   resize: none;
   padding: 12px 10px;
+  margin-bottom: 25px;
+  background-color: rgba(248, 210, 78, 0.1);
 
   font-family: 'Montserrat';
   font-style: normal;
@@ -198,7 +313,6 @@
   line-height: 15px;
   color: #131313;
 
-  margin-top: 32px;
   border: transparent;
   background: #f8d24e;
   border-radius: 10px;
@@ -214,15 +328,15 @@
     justify-content: center;
   }
 
-  .form-input {
+  .buy-form__form-input {
     width: 368px;
   }
 
-  .modal-comment {
-    width: 363px;
+  .buy-form__modal-comment {
+    width: 368px;
   }
 
   .submit-btn-buy {
-    width: 120px;
+    width: 121px;
   }
 }
