@@ -1,6 +1,14 @@
 <div class="backdrop is-hidden" data-modal-franchise>
   <div class="modal-franchise">
-    <button type="button" class="modal-close" data-modal-franchise-close>X</button>
+    <button
+      type="button"
+      class="modal-close-franchise"
+      data-modal-franchise-close
+    >
+      <svg aria-label="modal close button" class="modal-menu__close-btn-icon">
+        <use href="./images/sprite.svg#icon-close"></use>
+      </svg>
+    </button>
     <p class="franchise-title">
       Thank you for your interest in owning an Ice Cream shop
     </p>
@@ -17,12 +25,12 @@
         class="franchise-input"
         name="user-name"
         placeholder="Name"
-                pattern="[a-zA-Zа-яА-ЯІіЇї]+"
+        pattern="[a-zA-Zа-яА-ЯІіЇї]+"
         required
       />
       <input
         type="tel"
-                pattern="[0-9]+"
+        pattern="[0-9]+"
         minlength="10"
         class="franchise-input"
         name="user-tel"

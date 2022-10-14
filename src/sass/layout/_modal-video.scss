@@ -13,8 +13,6 @@ p {
 .modal-made {
   position: absolute;
   width: 280px;
-  height: 100%;
-  overflow-y: scroll;
   min-height: 380px;
   background-color: #fcfcfc;
   border: 2px solid #f8d24e;
@@ -23,14 +21,21 @@ p {
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 28px;
+  // overflow-y: scroll;
+
+  @media screen and (min-width: 768px) {
+    width: 568px;
+    min-height: 340px;
+    padding: 28px 60px;
+  }
 }
 
-.modal-close {
+.modal-close-video {
   position: absolute;
-  right: 24px;
-  top: 24px;
-  width: 30px;
-  height: 30px;
+  right: 8px;
+  top: 8px;
+  width: 16px;
+  height: 16px;
   border: 1px solid transparent;
   border-radius: 50px;
   background-color: transparent;
@@ -48,35 +53,35 @@ p {
   margin-bottom: 32px;
 }
 
-.modal-video {
-  text-align: center;
-  margin-bottom: 32px;
-}
-
 .video {
-  width: 224px;
+  width: 220px;
   height: 200px;
   border-radius: 10px;
-}
-
-.video-title {
-  padding-left: 28px;
-  padding-right: 28px;
-}
-
-@media screen and (min-width: 768px) {
-  .modal-made {
-    width: 568px;
-    min-height: 340px;
-  }
-
-  .video-title {
-    padding-left: 60px;
-    padding-right: 60px;
-  }
-
-  .video {
+  margin-bottom: 20px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
     width: 448px;
     border-radius: 10px;
+  }
+}
+
+.video-description {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+
+  color: #131313;
+
+  @media screen and(min-width: 768px) {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    /* or 20px */
+
+    color: #131313;
   }
 }
