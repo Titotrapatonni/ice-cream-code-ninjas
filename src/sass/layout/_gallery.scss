@@ -5,7 +5,10 @@
         transparent 18.46%,
         transparent 100%
     );
+                        margin-bottom: -106px;
         @media screen and (min-width: 768px) {
+                        margin-bottom: -163px;
+
             background-image: linear-gradient(
             to bottom,
                 $primary-bgc-color 50%,
@@ -14,6 +17,7 @@
             );
         }
         @media screen and (min-width: 1200px) {
+            margin-bottom: -324px;
             background-image: linear-gradient(
                 to bottom,
                 $primary-bgc-color 22.27%,

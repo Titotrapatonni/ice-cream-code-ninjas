@@ -1,6 +1,8 @@
 .section-contacts {
     font-weight: 500;
     font-size: 12px;
+                        margin-top: -345px;
+
     padding-top: 0;
     padding-bottom: 40px;
     color: $secondary-text-color;
@@ -13,6 +15,7 @@
 }
 @media screen and (min-width: 768px) {
     .section-contacts {
+                    margin-top: -324px;
         font-size: 14px;
         background-image: linear-gradient(
             to bottom,
@@ -24,6 +27,7 @@
 }
 @media screen and (min-width: 1200px) {
     .section-contacts {
+            margin-top: -96px;
         font-size: 16px;
         padding-bottom: 120px;
         background-image: linear-gradient(

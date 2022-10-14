@@ -6,8 +6,30 @@ transition: opacity $func-and-dur;
 opacity: 0;
 }
 .customer-reviews {
-    padding-top: 80.02px;
-    padding-bottom: 48.01px;
+    padding-top: 186px;
+    padding-bottom: 393px;
+
+
+   background-image: url(../images/ice-cream-bgi.jpg), url(../images/ice-coffee-bgi.jpg), url(../images/milkshakes-bgi.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+        background-size: cover;
+
+
+    @media screen and (min-width: 768px) {
+        background-image: url(../images/tablet-bgi.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    @media screen and (min-width: 1200px) {
+padding-top: 452px;        
+background-image: url(../images/desktop-bgi.jpg);
+                background-repeat: no-repeat;
+                        background-size: cover;
+
+    } 
+
 }
 
 .customer-reviews__img {
@@ -45,13 +67,6 @@ opacity: 0;
     text-align: center;
 }
 
-// .owl-dot {
-//     width: 12px;
-//     height: 12px;
-//     background-color: #84A178;
-//     border-radius: 50%;
-//     border: none;
-// }
 
 .owl-dots {
     margin-left: auto;
@@ -77,8 +92,8 @@ opacity: 0;
 
 @media screen and (min-width: 768px) {
     .customer-reviews {
-        padding-top: 55px;
-        padding-bottom: 80px;
+        padding-top: 218px;
+        padding-bottom: 384px;
     }
     
     .customer-reviews__img {
@@ -108,8 +123,8 @@ opacity: 0;
 
 @media screen and (min-width: 1200px) {
     .customer-reviews {
-        padding-top: 128px;
-        padding-bottom: 100px;
+        padding-top: 452px;
+        padding-bottom: 196px;
     }
     
     .customer-reviews__img {
