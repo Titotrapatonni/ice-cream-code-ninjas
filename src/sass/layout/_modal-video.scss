@@ -27,13 +27,17 @@ p {
 
 .modal-close {
   position: absolute;
-  right: 24px;
-  top: 24px;
+  right: 8px;
+  top: 8px;
   width: 30px;
   height: 30px;
   border: 1px solid transparent;
   border-radius: 50px;
   background-color: transparent;
+  @media screen and (mon-width:768px) {
+    right: 24px;
+  top: 24px;
+  }
 }
 
 .modal-title {
