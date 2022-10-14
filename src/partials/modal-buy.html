@@ -1,81 +1,35 @@
 <!-- Buy Modal -->
-
 <div class="backdrop is-hidden" data-modal-buy>
   <div class="modal-buy">
-    <button type="button" class="modal-close" data-modal-buy-close><svg
-        aria-label="modal close button"
-        class="modal-menu__close-btn-icon"
-        width="20"
-        height="20"
-      >
-        <use href="./images/sprite.svg#icon-close"></use>
-      </svg></button>
-    <p class="modal-title">Buy now</p>
+    <button type="button" class="modal-close__buy-now" data-modal-buy-close>X</button>
+    <p class="modal-buy-now-title">Buy now</p>
     <div class="modal-choise">
-      <div class="input-field">
-        <input
-          type="checkbox"
-          name="choice"
-          value="true"
-          class="input-check visually-hidden"
-          id="choice"
-        />
-        <label for="choice" class="check-ice"
-          ><h3 class="products-title">ice cream</h3></label
-        >
-      </div>
-      <div class="input-field">
-        <input
-          type="checkbox"
-          name="choice-2"
-          value="true"
-          class="input-check visually-hidden"
-          id="choice-2"
-        />
-        <label for="choice-2" class="check-cofee"
-          ><h3 class="products-title">ice coffee</h3></label
-        >
-      </div>
-      <div class="input-field">
-        <input
-          type="checkbox"
-          name="choice-3"
-          value="true"
-          class="input-check visually-hidden"
-          id="choice-3"
-        />
-        <label for="choice-3" class="check-milk"
-          ><h3 class="products-title">milkshake</h3></label
-        >
-      </div>
+      <label for="choice" class="check-ice">
+        <input type="checkbox" name="choice-products" class="input-products" value="ice-cream">
+        <span class="choice__item-ice-cream">ice cream</span>
+      </label>
+      <label for="choice" class="check-ice">
+        <input type="checkbox" name="choice-products" class="input-products" value="ice-coffee" checked>
+        <span class="choice__item-ice-coffee">ice coffee</span>
+      </label>
+      <label for="choice" class="check-ice">
+        <input type="checkbox" name="choice-products" class="input-products" value="milkshake">
+        <span class="choice__item-milkshake">milkshake</span>
+      </label>
     </div>
     <form class="buy-form">
-      <input
-        type="text"
-        class="form-input"
-        name="user-name"
-        placeholder="Name"
-        required
-        pattern="[a-zA-Zа-яА-ЯІіЇї]+"
-      />
-      <input
-        type="tel"
-        class="form-input"
-        name="user-tel"
-        minlength="10"
-        placeholder="Phone"
-        required
-        pattern="[0-9]+"
-      />
+      <input type="text" class="form-input__buy" name="user-name" pattern="[a-zA-Zа-яА-ЯІіЇї]+" placeholder="Name"
+        required />
+      <input type="tel" class="form-input__buy" name="user-tel" pattern="[0-9]+" minlength="10" placeholder="Phone"
+        required />
       <div>
-        <textarea
-          name="user-comment"
-          id="user-comment"
-          class="modal-comment"
-          placeholder="Comment"
-        ></textarea>
+        <textarea name="user-comment" id="user-comment" class="modal-comment__buy" placeholder="Comment"></textarea>
       </div>
-      <button type="submit" class="submit-btn-buy">Submit</button>
+      <button type="submit" class="submit-btn-buy" [disabled]="!ngForm.valid">
+        Submit
+      </button>
     </form>
   </div>
+</div>
+</div>
 </div>
